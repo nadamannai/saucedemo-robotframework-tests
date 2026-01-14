@@ -1,0 +1,25 @@
+{
+  "urls": {
+    "base_url": "https://www.saucedemo.com",
+    "saucelabs_url": "https://saucelabs.com"
+  },
+  "credentials": {
+    "standard_user": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "locked_out_user": {
+      "username": "locked_out_user",
+      "password": "secret_sauce"
+    },
+    "problem_user": {
+      "username": "problem_user",
+      "password": "secret_sauce"
+    }
+  },
+  "timeouts": {
+    "default": 10,
+    "short": 5,
+    "long": 30
+  }
+}

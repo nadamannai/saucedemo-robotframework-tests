@@ -1,0 +1,2 @@
+class BaseLibrary:
+    driver = None

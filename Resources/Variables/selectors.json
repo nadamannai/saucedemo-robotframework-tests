@@ -1,0 +1,23 @@
+{
+  "login_page": {
+    "username_field": "user-name",
+    "password_field": "password",
+    "login_button": "login-button",
+    "error_message": "error-message-container"
+  },
+  "inventory_page": {
+    "inventory_list": "inventory_list",
+    "product_item": "inventory_item",
+    "cart_badge": "shopping_cart_badge",
+    "cart_link": "shopping_cart_link"
+  },
+  "burger_menu": {
+    "menu_button": "react-burger-menu-btn",
+    "menu_container": "bm-menu",
+    "all_items_link": "inventory_sidebar_link",
+    "about_link": "about_sidebar_link",
+    "logout_link": "logout_sidebar_link",
+    "reset_link": "reset_sidebar_link",
+    "close_button": "react-burger-cross-btn"
+  }
+}
