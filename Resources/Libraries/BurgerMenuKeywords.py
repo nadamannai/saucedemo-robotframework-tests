@@ -47,7 +47,7 @@ class BurgerMenuKeywords:
         
         try:
             # Vérifier si le menu est ouvert en vérifiant la classe du wrapper
-            menu_wrapper = driver.find_element(By.ID, "react-burger-menu-btn")
+            menu_wrapper = driver.find_element(By.ID, self.selectors['burger_menu']['menu_button'])
             parent = driver.execute_script("return arguments[0].parentElement;", menu_wrapper)
             classes = parent.get_attribute("class")
             

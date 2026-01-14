@@ -5,16 +5,13 @@ Documentation    Tests de navigation dans le menu burger de SauceDemo
 Library    ../Resources/Libraries/BrowserKeywords.py    WITH NAME    Lib1
 Library    ../Resources/Libraries/LoginKeywords.py    WITH NAME    Lib2
 Library    ../Resources/Libraries/BurgerMenuKeywords.py    WITH NAME    Lib3
+
 Library    BuiltIn
 
 Suite Setup       Open Browser To URL
 Suite Teardown    Close Browser
 
-*** Variables ***
-${STANDARD_USER}        standard_user
-${PROBLEM_USER}         problem_user
-${LOCKED_USER}          locked_out_user
-${PASSWORD}             secret_sauce
+
 
 *** Test Cases ***
 # ============================================================================
@@ -29,7 +26,7 @@ Test Menu Burger Global Standard User
     Log    === TEST MENU BURGER GLOBAL - STANDARD USER ===    console=yes
     
     # Connexion
-    Login With User    ${STANDARD_USER}    ${PASSWORD}
+    Login With Standard User
     Sleep    2s
     
     # Test du menu burger
@@ -157,7 +154,7 @@ Test Menu Burger Global Problem User
     
     # Connexion
     Open Browser To URL
-    Login With User    ${PROBLEM_USER}    ${PASSWORD}
+    Login With Problem User
     Sleep    2s
     
     # Test du menu burger
@@ -299,7 +296,7 @@ Test Locked Out User Cannot Login
     Open Browser To URL
     
     # Tenter de se connecter avec l'utilisateur verrouillé
-    Login With User Should Fail    ${LOCKED_USER}    ${PASSWORD}
+    Login With Locked Out User   
     
     # Vérifier le message d'erreur
     Verify Login Error Message    Epic sadface: Sorry, this user has been locked out.

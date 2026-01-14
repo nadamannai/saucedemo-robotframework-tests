@@ -58,9 +58,13 @@ class LoginKeywords:
         self._login(username, password)
         print(f"✓ Connecté avec l'utilisateur: {username}")
 
-    @keyword("Login With User Should Fail")
-    def login_with_user_should_fail(self, username, password):
-        """Tente de se connecter et s'attend à un échec"""
+    @keyword("Login With Locked Out User")
+    def login_with_locked_out_user(self):
+        """Tente de se connecter avec un utilisateur verrouillé et s'attend à un échec"""
+        credentials = self.config['credentials']['locked_out_user']
+        username = credentials['username']
+        password = credentials['password']
+        
         browser_lib = self._get_browser_library()
         driver = browser_lib.driver
         wait = WebDriverWait(driver, self.config['timeouts']['short'])
