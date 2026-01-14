@@ -72,8 +72,8 @@ Test About Option Standard User
     Log    === TEST ABOUT - STANDARD USER ===    console=yes
     
     # Ouvrir le menu
-    Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    Sleep    1s
+    # Execute Test Step    Ouverture du menu burger    Open Burger Menu
+    # Sleep    1s
     
     # Tester About avec retour automatique
     Execute Test Step    Clic sur About    Click About
