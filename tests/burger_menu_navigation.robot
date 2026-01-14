@@ -38,7 +38,7 @@ Test Menu Burger Global Standard User
     Execute Test Step    Vérification des 4 options    Verify Burger Menu Options
     
     # Fermer le menu pour les tests suivants
-    Close Burger Menu
+    # Close Burger Menu
     
     Log    === ✓ TEST MENU BURGER GLOBAL RÉUSSI ===    console=yes
 
@@ -50,8 +50,8 @@ Test All Items Option For Standard User
     Log    === TEST ALL ITEMS - STANDARD USER ===    console=yes
     
     # Ouvrir le menu
-    Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    Sleep    3s
+    # Execute Test Step    Ouverture du menu burger    Open Burger Menu
+    # Sleep    3s
     
     # Tester All Items
     ${status}    ${current_url}=    Run Keyword And Ignore Error    Click All Items
