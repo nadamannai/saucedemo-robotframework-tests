@@ -51,11 +51,11 @@ Test All Items Option For Standard User
     
     # Ouvrir le menu
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    Sleep    1s
+    Sleep    3s
     
     # Tester All Items
     ${status}    ${current_url}=    Run Keyword And Ignore Error    Click All Items
-    Sleep    1s
+    Sleep    3s
     
     Run Keyword If    '${status}' == 'PASS'
     ...    Execute Test Step    Vérification même page    Verify Same Page    ${current_url}
