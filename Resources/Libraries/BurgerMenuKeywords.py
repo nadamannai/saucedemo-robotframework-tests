@@ -38,7 +38,7 @@ class BurgerMenuKeywords:
     def _get_browser_library(self):
         """Récupère l'instance de BrowserKeywords pour accéder au driver"""
         return self.builtin.get_library_instance('Lib1')
-
+    
     @keyword("Close Burger Menu")
     def close_burger_menu(self):
         """Ferme le menu burger s'il est ouvert"""
@@ -187,7 +187,6 @@ class BurgerMenuKeywords:
             
         except TimeoutException:
             print(f"ERREUR: Impossible de trouver le bouton pour '{product_name}'")
-            driver.save_screenshot("debug_add_product_error.png")
             raise Exception(f"Le produit '{product_name}' n'a pas pu être ajouté au panier")
     
     @keyword("Verify Cart Badge Count")
@@ -262,7 +261,6 @@ class BurgerMenuKeywords:
                     f"Le texte du bouton est '{button_text}' au lieu de 'REMOVE'"
                 print(f"✓ Le bouton 'Remove' est présent pour '{product_name}'")
             except TimeoutException:
-                driver.save_screenshot("debug_remove_button_missing.png")
                 raise AssertionError(f"Le bouton 'Remove' est introuvable pour '{product_name}'")
         else:
             raise ValueError(f"État invalide: '{expected_state}'. Utilisez 'add' ou 'remove'")
@@ -333,10 +331,14 @@ class BurgerMenuKeywords:
         valid_domains = ["saucelabs.com", "www.saucelabs.com"]
         is_valid_domain = domain in valid_domains
         is_root_path = path == ""
-    
-        assert is_valid_domain and is_root_path, \
-            f"Page Saucelabs non ouverte correctement. URL actuelle : {current_url} (domaine: {domain}, chemin: /{path})"
-    
+         
+        if not (is_valid_domain and is_root_path):
+         driver.save_screenshot("BUG_saucelabs_link_incorrect.png")
+         assert False, (
+               f"Page Saucelabs non ouverte correctement. URL actuelle : {current_url} "
+               f"(domaine: {domain}, chemin: /{path})"
+                                  )
+        
         print(f"✓ Page Saucelabs ouverte : {current_url}")
 
     @keyword("Return To Inventory Page")
@@ -392,6 +394,7 @@ class BurgerMenuKeywords:
             self.verify_saucelabs_page_opened()
             print("✓ Page Saucelabs vérifiée avec succès")
         except Exception as e:
+
             print(f"⚠ Échec de vérification de la page Saucelabs: {str(e)}")
         
         # Retourner automatiquement à inventory
@@ -460,95 +463,6 @@ class BurgerMenuKeywords:
         except NoSuchElementException:
             print("✓ Le panier est vide (pas de badge)")
 
-    @keyword("Verify Cart Is Empty After Reset")
-    def verify_cart_is_empty_after_reset(self, product_name="Sauce Labs Backpack"):
-        """
-        Vérifie complètement que le panier est vide après reset en vérifiant :
-        1. Le badge du panier n'existe pas ou affiche 0
-        2. Le bouton 'Remove' est redevenu 'Add to cart'
-        
-        Args:
-            product_name: Nom du produit à vérifier (par défaut: Sauce Labs Backpack)
-        """
-        browser_lib = self._get_browser_library()
-        driver = browser_lib.driver
-        wait = WebDriverWait(driver, self.config['timeouts']['default'])
-        
-        # Fermer le menu burger
-        self.close_burger_menu()
-        time.sleep(0.5)
-        
-        errors = []
-        
-        # 1. Vérifier que le badge du panier n'existe pas ou est à 0
-        print("Vérification du badge du panier...")
-        try:
-            badge = driver.find_element(By.CLASS_NAME, self.selectors['inventory_page']['cart_badge'])
-            if badge.is_displayed():
-                badge_text = badge.text
-                if badge_text != "0":
-                    error_msg = f"Le badge du panier affiche '{badge_text}' au lieu de 0 ou être absent"
-                    print(f"✗ {error_msg}")
-                    errors.append(error_msg)
-                else:
-                    print("⚠ Le badge affiche 0 (devrait être absent)")
-            else:
-                print("✓ Le badge du panier n'est pas visible")
-        except NoSuchElementException:
-            print("✓ Le badge du panier n'existe pas (panier vide)")
-        
-        # 2. Vérifier que le bouton 'Remove' est redevenu 'Add to cart'
-        print(f"Vérification du bouton pour '{product_name}'...")
-        product_id = product_name.lower().replace(" ", "-")
-        
-        # Vérifier que le bouton Remove n'existe pas/n'est pas visible
-        remove_button_selector = f"button[data-test='remove-{product_id}']"
-        try:
-            remove_button = driver.find_element(By.CSS_SELECTOR, remove_button_selector)
-            if remove_button.is_displayed():
-                error_msg = f"Le bouton 'Remove' est toujours visible pour '{product_name}'"
-                print(f"✗ {error_msg}")
-                errors.append(error_msg)
-            else:
-                print(f"✓ Le bouton 'Remove' n'est pas visible pour '{product_name}'")
-        except NoSuchElementException:
-            print(f"✓ Le bouton 'Remove' n'existe pas pour '{product_name}'")
-        
-        # Vérifier que le bouton 'Add to cart' est présent et visible
-        add_button_selector = f"button[data-test='add-to-cart-{product_id}']"
-        try:
-            add_button = wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, add_button_selector))
-            )
-            
-            if not add_button.is_displayed():
-                error_msg = f"Le bouton 'Add to cart' n'est pas visible pour '{product_name}'"
-                print(f"✗ {error_msg}")
-                errors.append(error_msg)
-            else:
-                button_text = add_button.text.strip().upper()
-                if "ADD TO CART" in button_text:
-                    print(f"✓ Le bouton 'Add to cart' est présent et visible pour '{product_name}'")
-                else:
-                    error_msg = f"Le texte du bouton est '{button_text}' au lieu de 'ADD TO CART'"
-                    print(f"✗ {error_msg}")
-                    errors.append(error_msg)
-                    
-        except TimeoutException:
-            error_msg = f"Le bouton 'Add to cart' est introuvable pour '{product_name}'"
-            print(f"✗ {error_msg}")
-            errors.append(error_msg)
-            driver.save_screenshot("debug_add_button_not_found.png")
-        
-        # Si des erreurs ont été trouvées, lever une exception
-        if errors:
-            driver.save_screenshot("debug_cart_not_empty_after_reset.png")
-            error_summary = "\n".join([f"  - {err}" for err in errors])
-            raise AssertionError(
-                f"Le panier n'est pas correctement vide après reset:\n{error_summary}"
-            )
-        
-        print("✓ Le panier est complètement vide après reset (badge absent + bouton 'Add to cart' restauré)")
 
     @keyword("Click Logout")
     def click_logout(self):
