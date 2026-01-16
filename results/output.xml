@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-01-15T21:06:01.257962" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-01-16T20:22:28.966481" rpa="false" schemaversion="5">
 <suite id="s1" name="Saucedemo-Robotframework-Tests" source="C:\Master_Check_Assissment_Mywork\saucedemo-robotframework-tests">
 <suite id="s1-s1" name="Tests" source="C:\Master_Check_Assissment_Mywork\saucedemo-robotframework-tests\tests">
 <suite id="s1-s1-s1" name="Burger Menu Navigation" source="C:\Master_Check_Assissment_Mywork\saucedemo-robotframework-tests\tests\burger_menu_navigation.robot">
 <kw name="Open Browser To URL" owner="Lib1" type="SETUP">
-<msg time="2026-01-15T21:06:04.117966" level="INFO">✓ Navigateur ouvert à : https://www.saucedemo.com</msg>
+<msg time="2026-01-16T20:22:36.887460" level="INFO">✓ Navigateur ouvert à : https://www.saucedemo.com</msg>
 <doc>Ouvre le navigateur à l'URL spécifiée ou à l'URL de base</doc>
-<status status="PASS" start="2026-01-15T21:06:01.568081" elapsed="2.550446"/>
+<status status="PASS" start="2026-01-16T20:22:29.351424" elapsed="7.536908"/>
 </kw>
 <test id="s1-s1-s1-t1" name="Test Menu Burger Global Standard User" line="23">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:04.126617" level="INFO">=== TEST MENU BURGER GLOBAL - STANDARD USER ===</msg>
+<msg time="2026-01-16T20:22:36.897997" level="INFO">=== TEST MENU BURGER GLOBAL - STANDARD USER ===</msg>
 <arg>=== TEST MENU BURGER GLOBAL - STANDARD USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:04.125551" elapsed="0.001791"/>
+<status status="PASS" start="2026-01-16T20:22:36.896412" elapsed="0.003431"/>
 </kw>
 <kw name="Login With Standard User" owner="Lib2">
-<msg time="2026-01-15T21:06:04.565442" level="INFO">✓ Connecté avec l'utilisateur standard</msg>
+<msg time="2026-01-16T20:22:37.365819" level="INFO">✓ Connecté avec l'utilisateur standard</msg>
 <doc>Se connecte avec l'utilisateur standard</doc>
-<status status="PASS" start="2026-01-15T21:06:04.127941" elapsed="0.437920"/>
+<status status="PASS" start="2026-01-16T20:22:36.901906" elapsed="0.464270"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:04.568894" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:22:37.369836" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:04.568156" elapsed="0.001455"/>
+<status status="PASS" start="2026-01-16T20:22:37.368738" elapsed="0.001765"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:06:15.514362" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:22:48.481235" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -39,25 +39,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:06:04.570932" elapsed="10.943962"/>
+<status status="PASS" start="2026-01-16T20:22:37.372215" elapsed="11.109538"/>
 </kw>
-<msg time="2026-01-15T21:06:15.515353" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:15.515784" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:48.482172" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:48.482724" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:04.570128" elapsed="10.945828"/>
+<status status="PASS" start="2026-01-16T20:22:37.370933" elapsed="11.112204"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.519213" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:48.487190" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.518294" elapsed="0.001483"/>
+<status status="PASS" start="2026-01-16T20:22:48.486103" elapsed="0.001867"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -69,51 +69,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.516433" elapsed="0.003538"/>
+<status status="PASS" start="2026-01-16T20:22:48.483535" elapsed="0.004884"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:15.520225" elapsed="0.000273"/>
+<status status="PASS" start="2026-01-16T20:22:48.488720" elapsed="0.000286"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:04.567235" elapsed="10.953644"/>
+<status status="PASS" start="2026-01-16T20:22:37.367872" elapsed="11.121512"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.522692" level="INFO">▶ Vérification menu ouvert</msg>
+<msg time="2026-01-16T20:22:48.491585" level="INFO">▶ Vérification menu ouvert</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.521995" elapsed="0.001277"/>
+<status status="PASS" start="2026-01-16T20:22:48.490822" elapsed="0.001338"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Burger Menu Is Open" owner="Lib3">
-<msg time="2026-01-15T21:06:15.561281" level="INFO">✓ Menu burger est bien ouvert</msg>
+<msg time="2026-01-16T20:22:48.521995" level="INFO">✓ Menu burger est bien ouvert</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que le menu burger est ouvert</doc>
-<status status="PASS" start="2026-01-15T21:06:15.525314" elapsed="0.037030"/>
+<status status="PASS" start="2026-01-16T20:22:48.493265" elapsed="0.029209"/>
 </kw>
-<msg time="2026-01-15T21:06:15.562862" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:15.563225" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:48.522989" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:48.523405" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.523663" elapsed="0.039923"/>
+<status status="PASS" start="2026-01-16T20:22:48.492470" elapsed="0.031392"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.566229" level="INFO">✓ Vérification menu ouvert: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:48.528097" level="INFO">✓ Vérification menu ouvert: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.565370" elapsed="0.002246"/>
+<status status="PASS" start="2026-01-16T20:22:48.526882" elapsed="0.002307"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -125,54 +125,54 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.564088" elapsed="0.003888"/>
+<status status="PASS" start="2026-01-16T20:22:48.524437" elapsed="0.005205"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:15.568301" elapsed="0.000382"/>
+<status status="PASS" start="2026-01-16T20:22:48.530028" elapsed="0.000634"/>
 </return>
 <arg>Vérification menu ouvert</arg>
 <arg>Verify Burger Menu Is Open</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:15.521400" elapsed="0.048000"/>
+<status status="PASS" start="2026-01-16T20:22:48.490028" elapsed="0.041323"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.571435" level="INFO">▶ Vérification des 4 options</msg>
+<msg time="2026-01-16T20:22:48.533622" level="INFO">▶ Vérification des 4 options</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.570749" elapsed="0.001447"/>
+<status status="PASS" start="2026-01-16T20:22:48.532643" elapsed="0.001718"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Burger Menu Options" owner="Lib3">
-<msg time="2026-01-15T21:06:15.727412" level="INFO">✓ Option 'All Items' vérifiée
+<msg time="2026-01-16T20:22:48.672760" level="INFO">✓ Option 'All Items' vérifiée
 ✓ Option 'About' vérifiée
 ✓ Option 'Logout' vérifiée
 ✓ Option 'Reset App State' vérifiée</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que toutes les options du menu burger sont présentes</doc>
-<status status="PASS" start="2026-01-15T21:06:15.573350" elapsed="0.154525"/>
+<status status="PASS" start="2026-01-16T20:22:48.535677" elapsed="0.137574"/>
 </kw>
-<msg time="2026-01-15T21:06:15.728240" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:15.728427" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:48.673652" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:48.674160" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.572479" elapsed="0.156395"/>
+<status status="PASS" start="2026-01-16T20:22:48.534750" elapsed="0.139899"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.731441" level="INFO">✓ Vérification des 4 options: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:48.677730" level="INFO">✓ Vérification des 4 options: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.730628" elapsed="0.001385"/>
+<status status="PASS" start="2026-01-16T20:22:48.676626" elapsed="0.001726"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -184,25 +184,25 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.729221" elapsed="0.003029"/>
+<status status="PASS" start="2026-01-16T20:22:48.675125" elapsed="0.003540"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:15.732420" elapsed="0.000234"/>
+<status status="PASS" start="2026-01-16T20:22:48.678924" elapsed="0.000264"/>
 </return>
 <arg>Vérification des 4 options</arg>
 <arg>Verify Burger Menu Options</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:15.570072" elapsed="0.162855"/>
+<status status="PASS" start="2026-01-16T20:22:48.531995" elapsed="0.147532"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.734275" level="INFO">=== ✓ TEST MENU BURGER GLOBAL TERMINE ===</msg>
+<msg time="2026-01-16T20:22:48.680720" level="INFO">=== ✓ TEST MENU BURGER GLOBAL TERMINE ===</msg>
 <arg>=== ✓ TEST MENU BURGER GLOBAL TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.733472" elapsed="0.001565"/>
+<status status="PASS" start="2026-01-16T20:22:48.680019" elapsed="0.001309"/>
 </kw>
 <doc>Test d'ouverture du menu burger et vérification des options
 pour l'utilisateur standard</doc>
@@ -210,63 +210,63 @@ pour l'utilisateur standard</doc>
 <tag>critical</tag>
 <tag>menu_visibility</tag>
 <tag>standard_user</tag>
-<status status="PASS" start="2026-01-15T21:06:04.119037" elapsed="11.616550"/>
+<status status="PASS" start="2026-01-16T20:22:36.888922" elapsed="11.792862"/>
 </test>
-<test id="s1-s1-s1-t2" name="Test All Items Option For Standard User" line="47">
+<test id="s1-s1-s1-t2" name="Test All Items Option For Standard User" line="46">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:15.750809" level="INFO">=== TEST ALL ITEMS - STANDARD USER ===</msg>
+<msg time="2026-01-16T20:22:48.705323" level="INFO">=== TEST ALL ITEMS - STANDARD USER ===</msg>
 <arg>=== TEST ALL ITEMS - STANDARD USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.749735" elapsed="0.001697"/>
+<status status="PASS" start="2026-01-16T20:22:48.703362" elapsed="0.003004"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click All Items" owner="Lib3">
-<msg time="2026-01-15T21:06:16.314982" level="INFO">✓ Cliqué sur 'All Items'</msg>
+<msg time="2026-01-16T20:22:49.268175" level="INFO">✓ Cliqué sur 'All Items'</msg>
 <doc>Clique sur l'option 'All Items' du menu</doc>
-<status status="PASS" start="2026-01-15T21:06:15.752974" elapsed="0.562694"/>
+<status status="PASS" start="2026-01-16T20:22:48.707875" elapsed="0.561322"/>
 </kw>
-<msg time="2026-01-15T21:06:16.316272" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:16.316604" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:22:49.269545" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:49.269975" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
 <var>${status}</var>
 <var>${current_url}</var>
 <arg>Click All Items</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:15.752109" elapsed="0.565387"/>
+<status status="PASS" start="2026-01-16T20:22:48.707021" elapsed="0.563258"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:16.321354" level="INFO">▶ Vérification même page</msg>
+<msg time="2026-01-16T20:22:49.273697" level="INFO">▶ Vérification même page</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.320816" elapsed="0.000986"/>
+<status status="PASS" start="2026-01-16T20:22:49.272937" elapsed="0.001238"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Same Page" owner="Lib3">
-<msg time="2026-01-15T21:06:16.330729" level="INFO">✓ Resté sur la même page : https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:22:49.281296" level="INFO">✓ Resté sur la même page : https://www.saucedemo.com/inventory.html</msg>
 <arg>@{args}</arg>
 <doc>Vérifie qu'on est resté sur la même page</doc>
-<status status="PASS" start="2026-01-15T21:06:16.322767" elapsed="0.008413"/>
+<status status="PASS" start="2026-01-16T20:22:49.275310" elapsed="0.006347"/>
 </kw>
-<msg time="2026-01-15T21:06:16.331604" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:16.332106" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:49.281969" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:49.282196" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.322056" elapsed="0.010525"/>
+<status status="PASS" start="2026-01-16T20:22:49.274488" elapsed="0.008019"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:16.335470" level="INFO">✓ Vérification même page: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:49.286373" level="INFO">✓ Vérification même page: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.334576" elapsed="0.001742"/>
+<status status="PASS" start="2026-01-16T20:22:49.284012" elapsed="0.003226"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -278,19 +278,19 @@ pour l'utilisateur standard</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.333031" elapsed="0.003647"/>
+<status status="PASS" start="2026-01-16T20:22:49.282795" elapsed="0.004741"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:16.337007" elapsed="0.000447"/>
+<status status="PASS" start="2026-01-16T20:22:49.287807" elapsed="0.000232"/>
 </return>
 <arg>Vérification même page</arg>
 <arg>Verify Same Page</arg>
 <arg>${current_url}</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:16.320140" elapsed="0.017722"/>
+<status status="PASS" start="2026-01-16T20:22:49.272315" elapsed="0.015966"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Execute Test Step</arg>
@@ -301,62 +301,62 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>Échec lors du clic sur All Items</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.318637" elapsed="0.019437"/>
+<status status="PASS" start="2026-01-16T20:22:49.271006" elapsed="0.017409"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:16.339123" level="INFO">=== ✓ TEST ALL ITEMS TERMINE ===</msg>
+<msg time="2026-01-16T20:22:49.289309" level="INFO">=== ✓ TEST ALL ITEMS TERMINE ===</msg>
 <arg>=== ✓ TEST ALL ITEMS TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.338551" elapsed="0.001123"/>
+<status status="PASS" start="2026-01-16T20:22:49.288786" elapsed="0.001054"/>
 </kw>
 <doc>Test de l'option "All Items" du menu burger
 Vérifie qu'on reste sur la même page</doc>
 <tag>all_items</tag>
 <tag>burger_menu</tag>
 <tag>standard_user</tag>
-<status status="PASS" start="2026-01-15T21:06:15.742767" elapsed="0.597492"/>
+<status status="PASS" start="2026-01-16T20:22:48.690416" elapsed="0.600026"/>
 </test>
-<test id="s1-s1-s1-t3" name="Test About Option Standard User" line="69">
+<test id="s1-s1-s1-t3" name="Test About Option Standard User" line="65">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:16.361942" level="INFO">=== TEST ABOUT - STANDARD USER ===</msg>
+<msg time="2026-01-16T20:22:49.312605" level="INFO">=== TEST ABOUT - STANDARD USER ===</msg>
 <arg>=== TEST ABOUT - STANDARD USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.360757" elapsed="0.001891"/>
+<status status="PASS" start="2026-01-16T20:22:49.311784" elapsed="0.001370"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:16.365569" level="INFO">▶ Clic sur About</msg>
+<msg time="2026-01-16T20:22:49.314871" level="INFO">▶ Clic sur About</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.364810" elapsed="0.001533"/>
+<status status="PASS" start="2026-01-16T20:22:49.314358" elapsed="0.001098"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click About" owner="Lib3">
-<msg time="2026-01-15T21:06:22.262126" level="INFO">✓ Cliqué sur 'About'</msg>
+<msg time="2026-01-16T20:22:54.032896" level="INFO">✓ Cliqué sur 'About'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'About' du menu</doc>
-<status status="PASS" start="2026-01-15T21:06:16.367589" elapsed="5.895853"/>
+<status status="PASS" start="2026-01-16T20:22:49.316815" elapsed="4.716631"/>
 </kw>
-<msg time="2026-01-15T21:06:22.264377" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:22.265240" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:54.033877" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:54.034390" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:16.366716" elapsed="5.899308"/>
+<status status="PASS" start="2026-01-16T20:22:49.316035" elapsed="4.718818"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.269375" level="INFO">✓ Clic sur About: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:54.039274" level="INFO">✓ Clic sur About: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.268178" elapsed="0.001813"/>
+<status status="PASS" start="2026-01-16T20:22:54.037515" elapsed="0.003486"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -368,51 +368,51 @@ Vérifie qu'on reste sur la même page</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.266499" elapsed="0.003763"/>
+<status status="PASS" start="2026-01-16T20:22:54.035286" elapsed="0.007039"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:22.270563" elapsed="0.000395"/>
+<status status="PASS" start="2026-01-16T20:22:54.042698" elapsed="0.000347"/>
 </return>
 <arg>Clic sur About</arg>
 <arg>Click About</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:16.363631" elapsed="5.907924"/>
+<status status="PASS" start="2026-01-16T20:22:49.313780" elapsed="4.729649"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.276506" level="INFO">▶ Vérification page Saucelabs</msg>
+<msg time="2026-01-16T20:22:54.045123" level="INFO">▶ Vérification page Saucelabs</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.274585" elapsed="0.003339"/>
+<status status="PASS" start="2026-01-16T20:22:54.044577" elapsed="0.001410"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Saucelabs Page Opened" owner="Lib3">
-<msg time="2026-01-15T21:06:22.297478" level="INFO">✓ Page Saucelabs ouverte : https://saucelabs.com/</msg>
+<msg time="2026-01-16T20:22:54.071027" level="INFO">✓ Page Saucelabs ouverte : https://saucelabs.com/</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que la page Saucelabs s'est ouverte</doc>
-<status status="PASS" start="2026-01-15T21:06:22.280269" elapsed="0.017603"/>
+<status status="PASS" start="2026-01-16T20:22:54.048256" elapsed="0.023689"/>
 </kw>
-<msg time="2026-01-15T21:06:22.298164" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:22.298367" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:22:54.072544" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:54.074086" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.279217" elapsed="0.019475"/>
+<status status="PASS" start="2026-01-16T20:22:54.046337" elapsed="0.028159"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.302403" level="INFO">✓ Vérification page Saucelabs: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:54.080088" level="INFO">✓ Vérification page Saucelabs: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.300408" elapsed="0.003138"/>
+<status status="PASS" start="2026-01-16T20:22:54.077419" elapsed="0.004103"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -424,55 +424,55 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.299085" elapsed="0.004866"/>
+<status status="PASS" start="2026-01-16T20:22:54.075074" elapsed="0.006977"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:22.304194" elapsed="0.000361"/>
+<status status="PASS" start="2026-01-16T20:22:54.082584" elapsed="0.000806"/>
 </return>
 <arg>Vérification page Saucelabs</arg>
 <arg>Verify Saucelabs Page Opened</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:22.272923" elapsed="0.032235"/>
+<status status="PASS" start="2026-01-16T20:22:54.044034" elapsed="0.041527"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.307173" level="INFO">▶ Retour automatique à inventory</msg>
+<msg time="2026-01-16T20:22:54.089978" level="INFO">▶ Retour automatique à inventory</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.306551" elapsed="0.001307"/>
+<status status="PASS" start="2026-01-16T20:22:54.089123" elapsed="0.001789"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Return To Inventory Page" owner="Lib3">
-<msg time="2026-01-15T21:06:22.893252" level="INFO">URL actuelle avant retour: https://saucelabs.com/
+<msg time="2026-01-16T20:22:54.500067" level="INFO">URL actuelle avant retour: https://saucelabs.com/
 Nombre de fenêtres ouvertes: 1
 URL après switch: https://saucelabs.com/
 Navigation vers la page inventory...
 ✓ Retour à la page inventory: https://www.saucedemo.com/inventory.html</msg>
 <arg>@{args}</arg>
 <doc>Retourne à la page inventory depuis n'importe quelle page</doc>
-<status status="PASS" start="2026-01-15T21:06:22.309557" elapsed="0.584573"/>
+<status status="PASS" start="2026-01-16T20:22:54.092428" elapsed="0.408468"/>
 </kw>
-<msg time="2026-01-15T21:06:22.894647" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:22.895005" level="INFO">${result} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:22:54.501427" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:22:54.501904" level="INFO">${result} = https://www.saucedemo.com/inventory.html</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.308194" elapsed="0.587066"/>
+<status status="PASS" start="2026-01-16T20:22:54.091269" elapsed="0.411065"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.899013" level="INFO">✓ Retour automatique à inventory: RÉUSSI</msg>
+<msg time="2026-01-16T20:22:54.506661" level="INFO">✓ Retour automatique à inventory: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.898069" elapsed="0.001417"/>
+<status status="PASS" start="2026-01-16T20:22:54.505340" elapsed="0.002369"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -484,90 +484,90 @@ Navigation vers la page inventory...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.895841" elapsed="0.003978"/>
+<status status="PASS" start="2026-01-16T20:22:54.503164" elapsed="0.004841"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:22.900115" elapsed="0.000342"/>
+<status status="PASS" start="2026-01-16T20:22:54.508303" elapsed="0.000292"/>
 </return>
 <arg>Retour automatique à inventory</arg>
 <arg>Return To Inventory Page</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:22.305959" elapsed="0.595304"/>
+<status status="PASS" start="2026-01-16T20:22:54.087107" elapsed="0.421893"/>
 </kw>
 <kw name="Get Current URL" owner="Lib1">
-<msg time="2026-01-15T21:06:22.908427" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:22:54.517013" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
 <var>${current_url}</var>
 <doc>Retourne l'URL actuelle</doc>
-<status status="PASS" start="2026-01-15T21:06:22.902259" elapsed="0.006824"/>
+<status status="PASS" start="2026-01-16T20:22:54.509664" elapsed="0.007978"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>inventory</arg>
 <arg>msg=Pas sur la page inventory après le test About</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.909560" elapsed="0.001650"/>
+<status status="PASS" start="2026-01-16T20:22:54.519200" elapsed="0.002966"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.913290" level="INFO">=== ✓ TEST ABOUT TERMINE ===</msg>
+<msg time="2026-01-16T20:22:54.523339" level="INFO">=== ✓ TEST ABOUT TERMINE ===</msg>
 <arg>=== ✓ TEST ABOUT TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.912114" elapsed="0.002773"/>
+<status status="PASS" start="2026-01-16T20:22:54.522728" elapsed="0.001308"/>
 </kw>
 <doc>Test de l'option "About" du menu burger
 Vérifie la redirection vers Saucelabs et le retour</doc>
 <tag>about</tag>
 <tag>burger_menu</tag>
 <tag>standard_user</tag>
-<status status="PASS" start="2026-01-15T21:06:16.347895" elapsed="6.567726"/>
+<status status="PASS" start="2026-01-16T20:22:49.296566" elapsed="5.227919"/>
 </test>
-<test id="s1-s1-s1-t4" name="Test Reset App State Standard User" line="94">
+<test id="s1-s1-s1-t4" name="Test Reset App State Standard User" line="88">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.927387" level="INFO">=== TEST RESET APP STATE - STANDARD USER ===</msg>
+<msg time="2026-01-16T20:22:54.556821" level="INFO">=== TEST RESET APP STATE - STANDARD USER ===</msg>
 <arg>=== TEST RESET APP STATE - STANDARD USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.926463" elapsed="0.001609"/>
+<status status="PASS" start="2026-01-16T20:22:54.555778" elapsed="0.001953"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:22.930619" level="INFO">▶ Ajout d'un produit au panier</msg>
+<msg time="2026-01-16T20:22:54.561592" level="INFO">▶ Ajout d'un produit au panier</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.929883" elapsed="0.001530"/>
+<status status="PASS" start="2026-01-16T20:22:54.560331" elapsed="0.003145"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Add Product To Cart" owner="Lib3">
-<msg time="2026-01-15T21:06:33.854640" level="INFO">Recherche du produit: Sauce Labs Backpack
+<msg time="2026-01-16T20:23:05.497405" level="INFO">Recherche du produit: Sauce Labs Backpack
 Sélecteur: button[data-test='add-to-cart-sauce-labs-backpack']
 ✓ Produit 'Sauce Labs Backpack' ajouté au panier</msg>
 <arg>@{args}</arg>
 <doc>Ajoute un produit au panier
 Args:
     product_name: Nom du produit à ajouter (par défaut: Sauce Labs Backpack)</doc>
-<status status="PASS" start="2026-01-15T21:06:22.932803" elapsed="10.922745"/>
+<status status="PASS" start="2026-01-16T20:22:54.565597" elapsed="10.932808"/>
 </kw>
-<msg time="2026-01-15T21:06:33.856075" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:33.856519" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:05.498883" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:05.499204" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:22.931814" elapsed="10.925038"/>
+<status status="PASS" start="2026-01-16T20:22:54.564017" elapsed="10.935448"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:33.859320" level="INFO">✓ Ajout d'un produit au panier: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:05.502179" level="INFO">✓ Ajout d'un produit au panier: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:33.858497" elapsed="0.001618"/>
+<status status="PASS" start="2026-01-16T20:23:05.501297" elapsed="0.001459"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -579,31 +579,31 @@ Args:
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:33.857229" elapsed="0.003105"/>
+<status status="PASS" start="2026-01-16T20:23:05.499868" elapsed="0.003085"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:33.860675" elapsed="0.000218"/>
+<status status="PASS" start="2026-01-16T20:23:05.503260" elapsed="0.000250"/>
 </return>
 <arg>Ajout d'un produit au panier</arg>
 <arg>Add Product To Cart</arg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:22.929141" elapsed="10.932101"/>
+<status status="PASS" start="2026-01-16T20:22:54.558741" elapsed="10.945032"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:33.862861" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:23:05.505418" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:33.862373" elapsed="0.000907"/>
+<status status="PASS" start="2026-01-16T20:23:05.504760" elapsed="0.001158"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:06:44.771118" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:23:16.433782" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -611,25 +611,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:06:33.864330" elapsed="10.907247"/>
+<status status="PASS" start="2026-01-16T20:23:05.507087" elapsed="10.927462"/>
 </kw>
-<msg time="2026-01-15T21:06:44.771951" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:44.772320" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:16.434894" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:16.435199" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:33.863577" elapsed="10.909016"/>
+<status status="PASS" start="2026-01-16T20:23:05.506303" elapsed="10.929221"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:44.775269" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:16.437955" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:44.774448" elapsed="0.001829"/>
+<status status="PASS" start="2026-01-16T20:23:16.437147" elapsed="0.001420"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -641,51 +641,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:44.772937" elapsed="0.003567"/>
+<status status="PASS" start="2026-01-16T20:23:16.435914" elapsed="0.002852"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:44.776735" elapsed="0.000248"/>
+<status status="PASS" start="2026-01-16T20:23:16.438948" elapsed="0.000204"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:33.861860" elapsed="10.915402"/>
+<status status="PASS" start="2026-01-16T20:23:05.504228" elapsed="10.935238"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:44.779050" level="INFO">▶ Clic Reset App State</msg>
+<msg time="2026-01-16T20:23:16.440991" level="INFO">▶ Clic Reset App State</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:44.778476" elapsed="0.001179"/>
+<status status="PASS" start="2026-01-16T20:23:16.440492" elapsed="0.000898"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Reset App State" owner="Lib3">
-<msg time="2026-01-15T21:06:45.826231" level="INFO">✓ Cliqué sur 'Reset App State'</msg>
+<msg time="2026-01-16T20:23:17.484552" level="INFO">✓ Cliqué sur 'Reset App State'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'Reset App State' du menu</doc>
-<status status="PASS" start="2026-01-15T21:06:44.780720" elapsed="1.046197"/>
+<status status="PASS" start="2026-01-16T20:23:16.442745" elapsed="1.043300"/>
 </kw>
-<msg time="2026-01-15T21:06:45.827448" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:45.828108" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:17.486728" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:17.487482" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:44.779946" elapsed="1.048373"/>
+<status status="PASS" start="2026-01-16T20:23:16.441697" elapsed="1.046059"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:45.831158" level="INFO">✓ Clic Reset App State: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:17.490224" level="INFO">✓ Clic Reset App State: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:45.830213" elapsed="0.001596"/>
+<status status="PASS" start="2026-01-16T20:23:17.489544" elapsed="0.001229"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -697,53 +697,53 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:45.828711" elapsed="0.003327"/>
+<status status="PASS" start="2026-01-16T20:23:17.488247" elapsed="0.002811"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:45.832337" elapsed="0.000228"/>
+<status status="PASS" start="2026-01-16T20:23:17.491371" elapsed="0.000231"/>
 </return>
 <arg>Clic Reset App State</arg>
 <arg>Click Reset App State</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:44.777868" elapsed="1.054937"/>
+<status status="PASS" start="2026-01-16T20:23:16.439974" elapsed="1.051891"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:45.834251" level="INFO">▶ Vérification badge panier vide</msg>
+<msg time="2026-01-16T20:23:17.493272" level="INFO">▶ Vérification badge panier vide</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:45.833771" elapsed="0.000884"/>
+<status status="PASS" start="2026-01-16T20:23:17.492807" elapsed="0.000861"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Cart Is Empty" owner="Lib3">
-<msg time="2026-01-15T21:06:56.484429" level="INFO">Menu déjà ouvert, fermeture...
+<msg time="2026-01-16T20:23:28.134515" level="INFO">Menu déjà ouvert, fermeture...
 ✓ Menu burger fermé
 ✓ Le panier est vide (pas de badge)</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que le panier est vide (badge absent)</doc>
-<status status="PASS" start="2026-01-15T21:06:45.835904" elapsed="10.648948"/>
+<status status="PASS" start="2026-01-16T20:23:17.495506" elapsed="10.639519"/>
 </kw>
-<msg time="2026-01-15T21:06:56.485209" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:06:56.485399" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:28.135428" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:28.135867" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:45.834916" elapsed="10.650814"/>
+<status status="PASS" start="2026-01-16T20:23:17.494372" elapsed="10.641649"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:56.488099" level="INFO">✓ Vérification badge panier vide: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:28.138508" level="INFO">✓ Vérification badge panier vide: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:56.487295" elapsed="0.001535"/>
+<status status="PASS" start="2026-01-16T20:23:28.137616" elapsed="0.001591"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -755,58 +755,58 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:06:56.486108" elapsed="0.002938"/>
+<status status="PASS" start="2026-01-16T20:23:28.136309" elapsed="0.003109"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:06:56.489293" elapsed="0.000213"/>
+<status status="PASS" start="2026-01-16T20:23:28.139773" elapsed="0.000192"/>
 </return>
 <arg>Vérification badge panier vide</arg>
 <arg>Verify Cart Is Empty</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:06:45.833288" elapsed="10.656524"/>
+<status status="PASS" start="2026-01-16T20:23:17.492315" elapsed="10.647906"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:06:56.491215" level="INFO">▶ Vérification bouton Add to cart</msg>
+<msg time="2026-01-16T20:23:28.141636" level="INFO">▶ Vérification bouton Add to cart</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:06:56.490721" elapsed="0.000959"/>
+<status status="PASS" start="2026-01-16T20:23:28.141159" elapsed="0.000978"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Product Button State" owner="Lib3">
-<msg time="2026-01-15T21:07:16.567311" level="FAIL">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:23:48.607657" level="FAIL">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <arg>@{args}</arg>
 <doc>Vérifie l'état du bouton d'un produit (Add to cart ou Remove)
 Args:
     product_name: Nom du produit à vérifier
     expected_state: État attendu ('add' ou 'remove')</doc>
-<status status="FAIL" start="2026-01-15T21:06:56.492918" elapsed="20.153746">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:23:28.143455" elapsed="20.583835">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
-<msg time="2026-01-15T21:07:16.647160" level="INFO">${status} = FAIL</msg>
-<msg time="2026-01-15T21:07:16.647475" level="INFO">${result} = Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:23:48.727769" level="INFO">${status} = FAIL</msg>
+<msg time="2026-01-16T20:23:48.728431" level="INFO">${result} = Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:06:56.492054" elapsed="20.155573"/>
+<status status="PASS" start="2026-01-16T20:23:28.142462" elapsed="20.586224"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Fail" owner="BuiltIn">
-<msg time="2026-01-15T21:07:16.651101" level="FAIL">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:23:48.731470" level="FAIL">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <arg>${step_name}: ${result}</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="FAIL" start="2026-01-15T21:07:16.650159" elapsed="0.025848">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:23:48.730775" elapsed="0.006916">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="FAIL" start="2026-01-15T21:07:16.649247" elapsed="0.027211">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:23:48.730149" elapsed="0.007772">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -818,12 +818,12 @@ Args:
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="FAIL" start="2026-01-15T21:07:16.648024" elapsed="0.028646">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:23:48.729028" elapsed="0.009039">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:16.676933" elapsed="0.000513"/>
+<status status="PASS" start="2026-01-16T20:23:48.738254" elapsed="0.000408"/>
 </return>
 <arg>Vérification bouton Add to cart</arg>
 <arg>Verify Product Button State</arg>
@@ -831,14 +831,14 @@ Args:
 <arg>add</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="FAIL" start="2026-01-15T21:06:56.490236" elapsed="20.187704">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:23:28.140662" elapsed="20.598473">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:16.679527" level="INFO">=== ✓ TEST RESET APP STATE TERMINE ===</msg>
+<msg time="2026-01-16T20:23:48.740509" level="INFO">=== ✓ TEST RESET APP STATE TERMINE ===</msg>
 <arg>=== ✓ TEST RESET APP STATE TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:16.678745" elapsed="0.001434"/>
+<status status="PASS" start="2026-01-16T20:23:48.739823" elapsed="0.001152"/>
 </kw>
 <doc>Test de l'option "Reset App State" du menu burger
 Vérifie que le badge du panier est vidé et que les boutons sont restaurés</doc>
@@ -846,27 +846,27 @@ Vérifie que le badge du panier est vidé et que les boutons sont restaurés</do
 <tag>critical</tag>
 <tag>reset</tag>
 <tag>standard_user</tag>
-<status status="FAIL" start="2026-01-15T21:06:22.920959" elapsed="53.759736">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:22:54.539605" elapsed="54.201849">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </test>
-<test id="s1-s1-s1-t5" name="Test Logout Standard User" line="128">
+<test id="s1-s1-s1-t5" name="Test Logout Standard User" line="113">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:16.806062" level="INFO">=== TEST LOGOUT - STANDARD USER ===</msg>
+<msg time="2026-01-16T20:23:48.774678" level="INFO">=== TEST LOGOUT - STANDARD USER ===</msg>
 <arg>=== TEST LOGOUT - STANDARD USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:16.805144" elapsed="0.002421"/>
+<status status="PASS" start="2026-01-16T20:23:48.773444" elapsed="0.002579"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:16.811222" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:23:48.779196" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:16.809858" elapsed="0.003108"/>
+<status status="PASS" start="2026-01-16T20:23:48.778596" elapsed="0.001414"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:07:27.749232" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:23:59.677381" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -874,25 +874,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:07:16.814296" elapsed="10.935351"/>
+<status status="PASS" start="2026-01-16T20:23:48.781176" elapsed="10.896679"/>
 </kw>
-<msg time="2026-01-15T21:07:27.749987" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:27.750348" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:59.678202" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:59.678624" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:16.813379" elapsed="10.937353"/>
+<status status="PASS" start="2026-01-16T20:23:48.780354" elapsed="10.898645"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.753175" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:59.682424" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.752356" elapsed="0.001272"/>
+<status status="PASS" start="2026-01-16T20:23:59.680974" elapsed="0.002092"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -904,51 +904,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.751123" elapsed="0.002701"/>
+<status status="PASS" start="2026-01-16T20:23:59.679354" elapsed="0.003937"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:27.754016" elapsed="0.000223"/>
+<status status="PASS" start="2026-01-16T20:23:59.683587" elapsed="0.000248"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:16.808774" elapsed="10.945776"/>
+<status status="PASS" start="2026-01-16T20:23:48.776938" elapsed="10.907238"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.755989" level="INFO">▶ Clic Logout</msg>
+<msg time="2026-01-16T20:23:59.686365" level="INFO">▶ Clic Logout</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.755534" elapsed="0.000897"/>
+<status status="PASS" start="2026-01-16T20:23:59.685563" elapsed="0.001391"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Logout" owner="Lib3">
-<msg time="2026-01-15T21:07:27.821750" level="INFO">✓ Cliqué sur 'Logout'</msg>
+<msg time="2026-01-16T20:23:59.752752" level="INFO">✓ Cliqué sur 'Logout'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'Logout' du menu</doc>
-<status status="PASS" start="2026-01-15T21:07:27.757413" elapsed="0.065291"/>
+<status status="PASS" start="2026-01-16T20:23:59.688044" elapsed="0.065581"/>
 </kw>
-<msg time="2026-01-15T21:07:27.823588" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:27.823946" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:59.754186" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:59.754597" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.756695" elapsed="0.067688"/>
+<status status="PASS" start="2026-01-16T20:23:59.687318" elapsed="0.068179"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.827801" level="INFO">✓ Clic Logout: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:59.760984" level="INFO">✓ Clic Logout: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.826972" elapsed="0.001360"/>
+<status status="PASS" start="2026-01-16T20:23:59.758905" elapsed="0.003675"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -960,51 +960,51 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.825228" elapsed="0.003349"/>
+<status status="PASS" start="2026-01-16T20:23:59.756379" elapsed="0.007011"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:27.828840" elapsed="0.000250"/>
+<status status="PASS" start="2026-01-16T20:23:59.764516" elapsed="0.000266"/>
 </return>
 <arg>Clic Logout</arg>
 <arg>Click Logout</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:27.755060" elapsed="0.074613"/>
+<status status="PASS" start="2026-01-16T20:23:59.684822" elapsed="0.080670"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.834759" level="INFO">▶ Vérification page login</msg>
+<msg time="2026-01-16T20:23:59.768229" level="INFO">▶ Vérification page login</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.833018" elapsed="0.003760"/>
+<status status="PASS" start="2026-01-16T20:23:59.767294" elapsed="0.002678"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Login Page Is Displayed" owner="Lib2">
-<msg time="2026-01-15T21:07:27.941906" level="INFO">✓ Page de login affichée correctement</msg>
+<msg time="2026-01-16T20:23:59.862363" level="INFO">✓ Page de login affichée correctement</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que la page de login est affichée</doc>
-<status status="PASS" start="2026-01-15T21:07:27.841079" elapsed="0.101370"/>
+<status status="PASS" start="2026-01-16T20:23:59.773883" elapsed="0.088931"/>
 </kw>
-<msg time="2026-01-15T21:07:27.942972" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:27.943414" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:23:59.863201" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:23:59.863620" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.838091" elapsed="0.105627"/>
+<status status="PASS" start="2026-01-16T20:23:59.770901" elapsed="0.093142"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.945913" level="INFO">✓ Vérification page login: RÉUSSI</msg>
+<msg time="2026-01-16T20:23:59.866197" level="INFO">✓ Vérification page login: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.945123" elapsed="0.001541"/>
+<status status="PASS" start="2026-01-16T20:23:59.865376" elapsed="0.001526"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1016,25 +1016,25 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.944024" elapsed="0.002867"/>
+<status status="PASS" start="2026-01-16T20:23:59.864361" elapsed="0.002785"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:27.947143" elapsed="0.000214"/>
+<status status="PASS" start="2026-01-16T20:23:59.867320" elapsed="0.000243"/>
 </return>
 <arg>Vérification page login</arg>
 <arg>Verify Login Page Is Displayed</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:27.831025" elapsed="0.116619"/>
+<status status="PASS" start="2026-01-16T20:23:59.766396" elapsed="0.101433"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.948567" level="INFO">=== ✓ TEST LOGOUT RÉUSSI ===</msg>
+<msg time="2026-01-16T20:23:59.868693" level="INFO">=== ✓ TEST LOGOUT RÉUSSI ===</msg>
 <arg>=== ✓ TEST LOGOUT RÉUSSI ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.947996" elapsed="0.001105"/>
+<status status="PASS" start="2026-01-16T20:23:59.868200" elapsed="0.000906"/>
 </kw>
 <doc>Test de l'option "Logout" du menu burger
 Vérifie la déconnexion et le retour à la page login</doc>
@@ -1042,37 +1042,37 @@ Vérifie la déconnexion et le retour à la page login</doc>
 <tag>critical</tag>
 <tag>logout</tag>
 <tag>standard_user</tag>
-<status status="PASS" start="2026-01-15T21:07:16.728249" elapsed="11.221325"/>
+<status status="PASS" start="2026-01-16T20:23:48.765674" elapsed="11.103863"/>
 </test>
-<test id="s1-s1-s1-t6" name="Test Menu Burger Global Problem User" line="151">
+<test id="s1-s1-s1-t6" name="Test Menu Burger Global Problem User" line="136">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:27.963594" level="INFO">=== TEST MENU BURGER GLOBAL - PROBLEM USER ===</msg>
+<msg time="2026-01-16T20:23:59.882081" level="INFO">=== TEST MENU BURGER GLOBAL - PROBLEM USER ===</msg>
 <arg>=== TEST MENU BURGER GLOBAL - PROBLEM USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:27.962276" elapsed="0.001983"/>
+<status status="PASS" start="2026-01-16T20:23:59.881031" elapsed="0.001814"/>
 </kw>
 <kw name="Open Browser To URL" owner="Lib1">
-<msg time="2026-01-15T21:07:28.146682" level="INFO">✓ Navigateur ouvert à : https://www.saucedemo.com</msg>
+<msg time="2026-01-16T20:24:00.012710" level="INFO">✓ Navigateur ouvert à : https://www.saucedemo.com</msg>
 <doc>Ouvre le navigateur à l'URL spécifiée ou à l'URL de base</doc>
-<status status="PASS" start="2026-01-15T21:07:27.964879" elapsed="0.182280"/>
+<status status="PASS" start="2026-01-16T20:23:59.883332" elapsed="0.130888"/>
 </kw>
 <kw name="Login With Problem User" owner="Lib2">
-<msg time="2026-01-15T21:07:28.512456" level="INFO">✓ Connecté avec l'utilisateur problem</msg>
+<msg time="2026-01-16T20:24:00.370994" level="INFO">✓ Connecté avec l'utilisateur problem</msg>
 <doc>Se connecte avec l'utilisateur problem</doc>
-<status status="PASS" start="2026-01-15T21:07:28.147859" elapsed="0.365430"/>
+<status status="PASS" start="2026-01-16T20:24:00.014975" elapsed="0.356490"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:28.515893" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:24:00.374139" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:28.515132" elapsed="0.002018"/>
+<status status="PASS" start="2026-01-16T20:24:00.373296" elapsed="0.001837"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:07:39.464030" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:24:11.308843" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -1080,25 +1080,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:07:28.519010" elapsed="10.945451"/>
+<status status="PASS" start="2026-01-16T20:24:00.376243" elapsed="10.933039"/>
 </kw>
-<msg time="2026-01-15T21:07:39.464814" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:39.465179" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:11.309627" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:11.310049" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:28.517642" elapsed="10.947934"/>
+<status status="PASS" start="2026-01-16T20:24:00.375512" elapsed="10.934833"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:39.468285" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:11.312810" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.467398" elapsed="0.001568"/>
+<status status="PASS" start="2026-01-16T20:24:11.311821" elapsed="0.001967"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1110,51 +1110,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.465997" elapsed="0.003339"/>
+<status status="PASS" start="2026-01-16T20:24:11.310647" elapsed="0.003504"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:39.469610" elapsed="0.000229"/>
+<status status="PASS" start="2026-01-16T20:24:11.314425" elapsed="0.000238"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:28.514350" elapsed="10.955757"/>
+<status status="PASS" start="2026-01-16T20:24:00.372460" elapsed="10.942485"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:39.472486" level="INFO">▶ Vérification menu ouvert</msg>
+<msg time="2026-01-16T20:24:11.316765" level="INFO">▶ Vérification menu ouvert</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.471888" elapsed="0.001093"/>
+<status status="PASS" start="2026-01-16T20:24:11.316164" elapsed="0.001149"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Burger Menu Is Open" owner="Lib3">
-<msg time="2026-01-15T21:07:39.500389" level="INFO">✓ Menu burger est bien ouvert</msg>
+<msg time="2026-01-16T20:24:11.347205" level="INFO">✓ Menu burger est bien ouvert</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que le menu burger est ouvert</doc>
-<status status="PASS" start="2026-01-15T21:07:39.474411" elapsed="0.026293"/>
+<status status="PASS" start="2026-01-16T20:24:11.318596" elapsed="0.029174"/>
 </kw>
-<msg time="2026-01-15T21:07:39.500976" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:39.501149" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:11.348240" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:11.348673" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.473271" elapsed="0.028145"/>
+<status status="PASS" start="2026-01-16T20:24:11.317707" elapsed="0.031202"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:39.504617" level="INFO">✓ Vérification menu ouvert: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:11.352186" level="INFO">✓ Vérification menu ouvert: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.502745" elapsed="0.002443"/>
+<status status="PASS" start="2026-01-16T20:24:11.351155" elapsed="0.001970"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1166,54 +1166,54 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.501747" elapsed="0.003685"/>
+<status status="PASS" start="2026-01-16T20:24:11.349860" elapsed="0.003547"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:39.505644" elapsed="0.000174"/>
+<status status="PASS" start="2026-01-16T20:24:11.353657" elapsed="0.000244"/>
 </return>
 <arg>Vérification menu ouvert</arg>
 <arg>Verify Burger Menu Is Open</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:39.470634" elapsed="0.035469"/>
+<status status="PASS" start="2026-01-16T20:24:11.315408" elapsed="0.038784"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:39.507542" level="INFO">▶ Vérification des 4 options</msg>
+<msg time="2026-01-16T20:24:11.358066" level="INFO">▶ Vérification des 4 options</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.506971" elapsed="0.001012"/>
+<status status="PASS" start="2026-01-16T20:24:11.355405" elapsed="0.003361"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Burger Menu Options" owner="Lib3">
-<msg time="2026-01-15T21:07:39.618511" level="INFO">✓ Option 'All Items' vérifiée
+<msg time="2026-01-16T20:24:11.478990" level="INFO">✓ Option 'All Items' vérifiée
 ✓ Option 'About' vérifiée
 ✓ Option 'Logout' vérifiée
 ✓ Option 'Reset App State' vérifiée</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que toutes les options du menu burger sont présentes</doc>
-<status status="PASS" start="2026-01-15T21:07:39.509044" elapsed="0.109968"/>
+<status status="PASS" start="2026-01-16T20:24:11.359968" elapsed="0.119503"/>
 </kw>
-<msg time="2026-01-15T21:07:39.619338" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:39.619753" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:11.479864" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:11.480336" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.508256" elapsed="0.111995"/>
+<status status="PASS" start="2026-01-16T20:24:11.359084" elapsed="0.121707"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:39.622396" level="INFO">✓ Vérification des 4 options: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:11.484434" level="INFO">✓ Vérification des 4 options: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.621672" elapsed="0.001118"/>
+<status status="PASS" start="2026-01-16T20:24:11.483715" elapsed="0.001411"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1225,31 +1225,31 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:39.620612" elapsed="0.002385"/>
+<status status="PASS" start="2026-01-16T20:24:11.481465" elapsed="0.003868"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:39.623233" elapsed="0.000200"/>
+<status status="PASS" start="2026-01-16T20:24:11.485517" elapsed="0.000258"/>
 </return>
 <arg>Vérification des 4 options</arg>
 <arg>Verify Burger Menu Options</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:39.506528" elapsed="0.117164"/>
+<status status="PASS" start="2026-01-16T20:24:11.354735" elapsed="0.131404"/>
 </kw>
 <kw name="Close Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:07:40.228940" level="INFO">Menu déjà ouvert, fermeture...
+<msg time="2026-01-16T20:24:12.086717" level="INFO">Menu déjà ouvert, fermeture...
 ✓ Menu burger fermé</msg>
 <doc>Ferme le menu burger s'il est ouvert</doc>
-<status status="PASS" start="2026-01-15T21:07:39.624188" elapsed="0.605307"/>
+<status status="PASS" start="2026-01-16T20:24:11.486657" elapsed="0.600749"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:40.231209" level="INFO">=== ✓ TEST MENU BURGER GLOBAL RÉUSSI ===</msg>
-<arg>=== ✓ TEST MENU BURGER GLOBAL RÉUSSI ===</arg>
+<msg time="2026-01-16T20:24:12.089281" level="INFO">=== ✓ TEST MENU BURGER GLOBAL TERMINE ===</msg>
+<arg>=== ✓ TEST MENU BURGER GLOBAL TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:40.230402" elapsed="0.001325"/>
+<status status="PASS" start="2026-01-16T20:24:12.088311" elapsed="0.001753"/>
 </kw>
 <doc>Test d'ouverture du menu burger et vérification des options
 pour l'utilisateur problem_user</doc>
@@ -1257,27 +1257,27 @@ pour l'utilisateur problem_user</doc>
 <tag>known_issue</tag>
 <tag>menu_visibility</tag>
 <tag>problem_user</tag>
-<status status="PASS" start="2026-01-15T21:07:27.954507" elapsed="12.277698"/>
+<status status="PASS" start="2026-01-16T20:23:59.875124" elapsed="12.215528"/>
 </test>
-<test id="s1-s1-s1-t7" name="Test All Items Option For Problem User" line="176">
+<test id="s1-s1-s1-t7" name="Test All Items Option For Problem User" line="161">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:40.243374" level="INFO">=== TEST ALL ITEMS - PROBLEM USER ===</msg>
+<msg time="2026-01-16T20:24:12.113902" level="INFO">=== TEST ALL ITEMS - PROBLEM USER ===</msg>
 <arg>=== TEST ALL ITEMS - PROBLEM USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:40.242588" elapsed="0.001366"/>
+<status status="PASS" start="2026-01-16T20:24:12.112741" elapsed="0.002007"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:40.246135" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:24:12.117618" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:40.245384" elapsed="0.001311"/>
+<status status="PASS" start="2026-01-16T20:24:12.116424" elapsed="0.002174"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:07:51.175267" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:24:23.044979" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -1285,25 +1285,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:07:40.247782" elapsed="10.927902"/>
+<status status="PASS" start="2026-01-16T20:24:12.120253" elapsed="10.925164"/>
 </kw>
-<msg time="2026-01-15T21:07:51.176054" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:51.176573" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:23.045767" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:23.046238" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:40.246964" elapsed="10.929798"/>
+<status status="PASS" start="2026-01-16T20:24:12.119003" elapsed="10.927690"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.179258" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:23.050277" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.178538" elapsed="0.001459"/>
+<status status="PASS" start="2026-01-16T20:24:23.048901" elapsed="0.002853"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1315,66 +1315,66 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.177326" elapsed="0.002894"/>
+<status status="PASS" start="2026-01-16T20:24:23.047382" elapsed="0.004726"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:51.180477" elapsed="0.000302"/>
+<status status="PASS" start="2026-01-16T20:24:23.052379" elapsed="0.000267"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:40.244623" elapsed="10.936500"/>
+<status status="PASS" start="2026-01-16T20:24:12.115484" elapsed="10.937480"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click All Items" owner="Lib3">
-<msg time="2026-01-15T21:07:51.742481" level="INFO">✓ Cliqué sur 'All Items'</msg>
+<msg time="2026-01-16T20:24:23.604542" level="INFO">✓ Cliqué sur 'All Items'</msg>
 <doc>Clique sur l'option 'All Items' du menu</doc>
-<status status="PASS" start="2026-01-15T21:07:51.181971" elapsed="0.561305"/>
+<status status="PASS" start="2026-01-16T20:24:23.053901" elapsed="0.551605"/>
 </kw>
-<msg time="2026-01-15T21:07:51.743854" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:51.744337" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:24:23.605974" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:23.606431" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
 <var>${status}</var>
 <var>${current_url}</var>
 <arg>Click All Items</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.181479" elapsed="0.563235"/>
+<status status="PASS" start="2026-01-16T20:24:23.053361" elapsed="0.553269"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.747899" level="INFO">▶ Vérification même page</msg>
+<msg time="2026-01-16T20:24:23.611627" level="INFO">▶ Vérification même page</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.747388" elapsed="0.000927"/>
+<status status="PASS" start="2026-01-16T20:24:23.610869" elapsed="0.001659"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Same Page" owner="Lib3">
-<msg time="2026-01-15T21:07:51.755198" level="INFO">✓ Resté sur la même page : https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:24:23.621715" level="INFO">✓ Resté sur la même page : https://www.saucedemo.com/inventory.html</msg>
 <arg>@{args}</arg>
 <doc>Vérifie qu'on est resté sur la même page</doc>
-<status status="PASS" start="2026-01-15T21:07:51.749306" elapsed="0.006387"/>
+<status status="PASS" start="2026-01-16T20:24:23.613817" elapsed="0.008329"/>
 </kw>
-<msg time="2026-01-15T21:07:51.755959" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:51.756192" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:23.622528" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:23.623001" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.748587" elapsed="0.007898"/>
+<status status="PASS" start="2026-01-16T20:24:23.612865" elapsed="0.010537"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.758593" level="INFO">✓ Vérification même page: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:23.626737" level="INFO">✓ Vérification même page: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.757961" elapsed="0.001207"/>
+<status status="PASS" start="2026-01-16T20:24:23.625520" elapsed="0.003173"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1386,19 +1386,19 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.756775" elapsed="0.002590"/>
+<status status="PASS" start="2026-01-16T20:24:23.623815" elapsed="0.005218"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:51.759585" elapsed="0.000193"/>
+<status status="PASS" start="2026-01-16T20:24:23.629294" elapsed="0.000307"/>
 </return>
 <arg>Vérification même page</arg>
 <arg>Verify Same Page</arg>
 <arg>${current_url}</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:51.746749" elapsed="0.013251"/>
+<status status="PASS" start="2026-01-16T20:24:23.610038" elapsed="0.019839"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Execute Test Step</arg>
@@ -1411,14 +1411,14 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>console=yes</arg>
 <arg>level=WARN</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.745294" elapsed="0.014843"/>
+<status status="PASS" start="2026-01-16T20:24:23.608389" elapsed="0.021652"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.761027" level="INFO">=== ✓ TEST ALL ITEMS TERMINÉ ===</msg>
+<msg time="2026-01-16T20:24:23.631431" level="INFO">=== ✓ TEST ALL ITEMS TERMINÉ ===</msg>
 <arg>=== ✓ TEST ALL ITEMS TERMINÉ ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.760498" elapsed="0.001005"/>
+<status status="PASS" start="2026-01-16T20:24:23.630586" elapsed="0.001665"/>
 </kw>
 <doc>Test de l'option "All Items" du menu burger
 pour problem_user</doc>
@@ -1426,27 +1426,27 @@ pour problem_user</doc>
 <tag>burger_menu</tag>
 <tag>known_issue</tag>
 <tag>problem_user</tag>
-<status status="PASS" start="2026-01-15T21:07:40.237341" elapsed="11.524671"/>
+<status status="PASS" start="2026-01-16T20:24:12.097901" elapsed="11.535460"/>
 </test>
-<test id="s1-s1-s1-t8" name="Test About Option Problem User" line="198">
+<test id="s1-s1-s1-t8" name="Test About Option Problem User" line="183">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.777440" level="INFO">=== TEST ABOUT - PROBLEM USER ===</msg>
+<msg time="2026-01-16T20:24:23.661038" level="INFO">=== TEST ABOUT - PROBLEM USER ===</msg>
 <arg>=== TEST ABOUT - PROBLEM USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.776477" elapsed="0.001738"/>
+<status status="PASS" start="2026-01-16T20:24:23.659915" elapsed="0.002313"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:51.780185" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:24:23.664441" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.779583" elapsed="0.001221"/>
+<status status="PASS" start="2026-01-16T20:24:23.663803" elapsed="0.001271"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:07:53.242733" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:24:25.127050" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 Menu déjà ouvert, fermeture...
 ✓ Menu burger fermé
@@ -1456,25 +1456,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:07:51.781861" elapsed="1.461365"/>
+<status status="PASS" start="2026-01-16T20:24:23.666152" elapsed="1.461345"/>
 </kw>
-<msg time="2026-01-15T21:07:53.243625" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:53.244042" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:25.127914" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:25.128370" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:51.781103" elapsed="1.463133"/>
+<status status="PASS" start="2026-01-16T20:24:23.665400" elapsed="1.463381"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:53.247546" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:25.131323" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:53.246503" elapsed="0.001784"/>
+<status status="PASS" start="2026-01-16T20:24:25.130391" elapsed="0.001558"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1486,51 +1486,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:53.245002" elapsed="0.003582"/>
+<status status="PASS" start="2026-01-16T20:24:25.129185" elapsed="0.002923"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:53.248907" elapsed="0.000239"/>
+<status status="PASS" start="2026-01-16T20:24:25.132395" elapsed="0.000214"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:51.778922" elapsed="1.470477"/>
+<status status="PASS" start="2026-01-16T20:24:23.662991" elapsed="1.469848"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:53.251031" level="INFO">▶ Clic sur About</msg>
+<msg time="2026-01-16T20:24:25.134217" level="INFO">▶ Clic sur About</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:53.250493" elapsed="0.001664"/>
+<status status="PASS" start="2026-01-16T20:24:25.133745" elapsed="0.000877"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click About" owner="Lib3">
-<msg time="2026-01-15T21:07:55.548322" level="INFO">✓ Cliqué sur 'About'</msg>
+<msg time="2026-01-16T20:24:28.472829" level="INFO">✓ Cliqué sur 'About'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'About' du menu</doc>
-<status status="PASS" start="2026-01-15T21:07:53.253806" elapsed="2.295382"/>
+<status status="PASS" start="2026-01-16T20:24:25.135754" elapsed="3.337525"/>
 </kw>
-<msg time="2026-01-15T21:07:55.549658" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:55.550007" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:28.473667" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:28.473984" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:53.252637" elapsed="2.297673"/>
+<status status="PASS" start="2026-01-16T20:24:25.134963" elapsed="3.339649"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:55.552991" level="INFO">✓ Clic sur About: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:28.478963" level="INFO">✓ Clic sur About: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:55.552216" elapsed="0.002802"/>
+<status status="PASS" start="2026-01-16T20:24:28.477599" elapsed="0.002293"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1542,39 +1542,39 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:55.550740" elapsed="0.004730"/>
+<status status="PASS" start="2026-01-16T20:24:28.475101" elapsed="0.005275"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:55.555867" elapsed="0.000700"/>
+<status status="PASS" start="2026-01-16T20:24:28.480715" elapsed="0.000546"/>
 </return>
 <arg>Clic sur About</arg>
 <arg>Click About</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:53.249943" elapsed="2.308495"/>
+<status status="PASS" start="2026-01-16T20:24:25.133273" elapsed="3.348870"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Verify Saucelabs Page Opened" owner="Lib3">
-<msg time="2026-01-15T21:07:56.001928" level="FAIL">Page Saucelabs non ouverte correctement. URL actuelle : https://saucelabs.com/error/404 (domaine: saucelabs.com, chemin: /error/404)</msg>
+<msg time="2026-01-16T20:24:28.906780" level="FAIL">Page Saucelabs non ouverte correctement. URL actuelle : https://saucelabs.com/error/404 (domaine: saucelabs.com, chemin: /error/404)</msg>
 <doc>Vérifie que la page Saucelabs s'est ouverte</doc>
-<status status="FAIL" start="2026-01-15T21:07:55.560157" elapsed="0.448058">Page Saucelabs non ouverte correctement. URL actuelle : https://saucelabs.com/error/404 (domaine: saucelabs.com, chemin: /error/404)</status>
+<status status="FAIL" start="2026-01-16T20:24:28.484230" elapsed="0.502154">Page Saucelabs non ouverte correctement. URL actuelle : https://saucelabs.com/error/404 (domaine: saucelabs.com, chemin: /error/404)</status>
 </kw>
-<msg time="2026-01-15T21:07:56.008554" level="INFO">${about_success} = False</msg>
+<msg time="2026-01-16T20:24:28.987065" level="INFO">${about_success} = False</msg>
 <var>${about_success}</var>
 <arg>Verify Saucelabs Page Opened</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-01-15T21:07:55.559191" elapsed="0.449661"/>
+<status status="PASS" start="2026-01-16T20:24:28.483192" elapsed="0.504576"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.010627" level="INFO">✗ ÉCHEC : La page Saucelabs ne s'est pas ouverte pour problem_user</msg>
+<msg time="2026-01-16T20:24:28.990420" level="INFO">✗ ÉCHEC : La page Saucelabs ne s'est pas ouverte pour problem_user</msg>
 <arg>✗ ÉCHEC : La page Saucelabs ne s'est pas ouverte pour problem_user</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.010129" elapsed="0.000917"/>
+<status status="PASS" start="2026-01-16T20:24:28.989834" elapsed="0.001038"/>
 </kw>
 <arg>${about_success}</arg>
 <arg>Log</arg>
@@ -1587,64 +1587,64 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.009368" elapsed="0.001871"/>
+<status status="PASS" start="2026-01-16T20:24:28.988689" elapsed="0.002427"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Fail" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.013849" level="FAIL">Page Saucelabs non ouverte</msg>
+<msg time="2026-01-16T20:24:28.995007" level="FAIL">Page Saucelabs non ouverte</msg>
 <arg>Page Saucelabs non ouverte</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="FAIL" start="2026-01-15T21:07:56.013388" elapsed="0.005640">Page Saucelabs non ouverte</status>
+<status status="FAIL" start="2026-01-16T20:24:28.994494" elapsed="0.007568">Page Saucelabs non ouverte</status>
 </kw>
 <arg>Fail</arg>
 <arg>Page Saucelabs non ouverte</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="FAIL" start="2026-01-15T21:07:56.012731" elapsed="0.006520">Page Saucelabs non ouverte</status>
+<status status="FAIL" start="2026-01-16T20:24:28.993945" elapsed="0.008451">Page Saucelabs non ouverte</status>
 </kw>
 <arg>not ${about_success}</arg>
 <arg>BuiltIn.Run Keyword And Continue On Failure</arg>
 <arg>Fail</arg>
 <arg>Page Saucelabs non ouverte</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="FAIL" start="2026-01-15T21:07:56.011779" elapsed="0.007640">Page Saucelabs non ouverte</status>
+<status status="FAIL" start="2026-01-16T20:24:28.992020" elapsed="0.010598">Page Saucelabs non ouverte</status>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.022183" level="INFO">▶ Retour automatique à inventory</msg>
+<msg time="2026-01-16T20:24:29.004361" level="INFO">▶ Retour automatique à inventory</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.020867" elapsed="0.002005"/>
+<status status="PASS" start="2026-01-16T20:24:29.003804" elapsed="0.001131"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Return To Inventory Page" owner="Lib3">
-<msg time="2026-01-15T21:07:56.669178" level="INFO">URL actuelle avant retour: https://saucelabs.com/error/404
+<msg time="2026-01-16T20:24:29.489241" level="INFO">URL actuelle avant retour: https://saucelabs.com/error/404
 Nombre de fenêtres ouvertes: 1
 URL après switch: https://saucelabs.com/error/404
 Navigation vers la page inventory...
 ✓ Retour à la page inventory: https://www.saucedemo.com/inventory.html</msg>
 <arg>@{args}</arg>
 <doc>Retourne à la page inventory depuis n'importe quelle page</doc>
-<status status="PASS" start="2026-01-15T21:07:56.024089" elapsed="0.645574"/>
+<status status="PASS" start="2026-01-16T20:24:29.006283" elapsed="0.483473"/>
 </kw>
-<msg time="2026-01-15T21:07:56.670072" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:07:56.670577" level="INFO">${result} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:24:29.490174" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:29.490942" level="INFO">${result} = https://www.saucedemo.com/inventory.html</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.023245" elapsed="0.647814"/>
+<status status="PASS" start="2026-01-16T20:24:29.005422" elapsed="0.486749"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.673806" level="INFO">✓ Retour automatique à inventory: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:29.497905" level="INFO">✓ Retour automatique à inventory: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.672988" elapsed="0.001487"/>
+<status status="PASS" start="2026-01-16T20:24:29.496384" elapsed="0.002170"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1656,38 +1656,38 @@ Navigation vers la page inventory...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.671581" elapsed="0.003137"/>
+<status status="PASS" start="2026-01-16T20:24:29.493154" elapsed="0.005833"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:07:56.675287" elapsed="0.000235"/>
+<status status="PASS" start="2026-01-16T20:24:29.499597" elapsed="0.000619"/>
 </return>
 <arg>Retour automatique à inventory</arg>
 <arg>Return To Inventory Page</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:56.019956" elapsed="0.656380"/>
+<status status="PASS" start="2026-01-16T20:24:29.003211" elapsed="0.497981"/>
 </kw>
 <kw name="Get Current URL" owner="Lib1">
-<msg time="2026-01-15T21:07:56.685845" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
+<msg time="2026-01-16T20:24:29.511534" level="INFO">${current_url} = https://www.saucedemo.com/inventory.html</msg>
 <var>${current_url}</var>
 <doc>Retourne l'URL actuelle</doc>
-<status status="PASS" start="2026-01-15T21:07:56.677080" elapsed="0.009087"/>
+<status status="PASS" start="2026-01-16T20:24:29.502616" elapsed="0.009850"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>inventory</arg>
 <arg>msg=Pas sur la page inventory après le test About</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.687535" elapsed="0.001160"/>
+<status status="PASS" start="2026-01-16T20:24:29.513411" elapsed="0.002314"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.690888" level="INFO">=== ✓ TEST ABOUT TERMINÉ ===</msg>
+<msg time="2026-01-16T20:24:29.517092" level="INFO">=== ✓ TEST ABOUT TERMINÉ ===</msg>
 <arg>=== ✓ TEST ABOUT TERMINÉ ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.689674" elapsed="0.002630"/>
+<status status="PASS" start="2026-01-16T20:24:29.516363" elapsed="0.002223"/>
 </kw>
 <doc>Test de l'option "About" du menu burger pour problem_user
 ÉCHEC ATTENDU: La page Saucelabs ne s'ouvre pas correctement</doc>
@@ -1695,52 +1695,52 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <tag>burger_menu</tag>
 <tag>known_issue</tag>
 <tag>problem_user</tag>
-<status status="FAIL" start="2026-01-15T21:07:51.770800" elapsed="4.922931">Page Saucelabs non ouverte</status>
+<status status="FAIL" start="2026-01-16T20:24:23.651083" elapsed="5.869496">Page Saucelabs non ouverte</status>
 </test>
-<test id="s1-s1-s1-t9" name="Test Reset App State Problem User" line="236">
+<test id="s1-s1-s1-t9" name="Test Reset App State Problem User" line="221">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.734883" level="INFO">=== TEST RESET APP STATE - PROBLEM USER ===</msg>
+<msg time="2026-01-16T20:24:29.560158" level="INFO">=== TEST RESET APP STATE - PROBLEM USER ===</msg>
 <arg>=== TEST RESET APP STATE - PROBLEM USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.732441" elapsed="0.003942"/>
+<status status="PASS" start="2026-01-16T20:24:29.559324" elapsed="0.001428"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:07:56.739511" level="INFO">▶ Ajout d'un produit au panier</msg>
+<msg time="2026-01-16T20:24:29.562750" level="INFO">▶ Ajout d'un produit au panier</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.738938" elapsed="0.001082"/>
+<status status="PASS" start="2026-01-16T20:24:29.562073" elapsed="0.001280"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Add Product To Cart" owner="Lib3">
-<msg time="2026-01-15T21:08:07.687023" level="INFO">Recherche du produit: Sauce Labs Backpack
+<msg time="2026-01-16T20:24:40.507934" level="INFO">Recherche du produit: Sauce Labs Backpack
 Sélecteur: button[data-test='add-to-cart-sauce-labs-backpack']
 ✓ Produit 'Sauce Labs Backpack' ajouté au panier</msg>
 <arg>@{args}</arg>
 <doc>Ajoute un produit au panier
 Args:
     product_name: Nom du produit à ajouter (par défaut: Sauce Labs Backpack)</doc>
-<status status="PASS" start="2026-01-15T21:07:56.741241" elapsed="10.946861"/>
+<status status="PASS" start="2026-01-16T20:24:29.564290" elapsed="10.944866"/>
 </kw>
-<msg time="2026-01-15T21:08:07.688531" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:08:07.688778" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:40.509656" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:40.509999" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:07:56.740306" elapsed="10.948677"/>
+<status status="PASS" start="2026-01-16T20:24:29.563625" elapsed="10.946706"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:07.692346" level="INFO">✓ Ajout d'un produit au panier: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:40.512846" level="INFO">✓ Ajout d'un produit au panier: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:07.690630" elapsed="0.002373"/>
+<status status="PASS" start="2026-01-16T20:24:40.512086" elapsed="0.001537"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1752,31 +1752,31 @@ Args:
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:08:07.689349" elapsed="0.003861"/>
+<status status="PASS" start="2026-01-16T20:24:40.510804" elapsed="0.003030"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:08:07.693429" elapsed="0.000243"/>
+<status status="PASS" start="2026-01-16T20:24:40.514128" elapsed="0.000260"/>
 </return>
 <arg>Ajout d'un produit au panier</arg>
 <arg>Add Product To Cart</arg>
 <arg>Sauce Labs Backpack</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:07:56.738209" elapsed="10.955756"/>
+<status status="PASS" start="2026-01-16T20:24:29.561325" elapsed="10.953328"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:07.695389" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:24:40.516131" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:07.694907" elapsed="0.001056"/>
+<status status="PASS" start="2026-01-16T20:24:40.515648" elapsed="0.000998"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:08:18.616362" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:24:51.465703" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -1784,25 +1784,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:08:07.696997" elapsed="10.919980"/>
+<status status="PASS" start="2026-01-16T20:24:40.517919" elapsed="10.948232"/>
 </kw>
-<msg time="2026-01-15T21:08:18.617321" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:08:18.617569" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:51.466500" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:51.466997" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:08:07.696326" elapsed="10.921408"/>
+<status status="PASS" start="2026-01-16T20:24:40.516933" elapsed="10.950386"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:18.620068" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:51.470275" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:18.619260" elapsed="0.001366"/>
+<status status="PASS" start="2026-01-16T20:24:51.469275" elapsed="0.001602"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1814,51 +1814,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:08:18.618047" elapsed="0.002842"/>
+<status status="PASS" start="2026-01-16T20:24:51.467703" elapsed="0.003511"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:08:18.621244" elapsed="0.000198"/>
+<status status="PASS" start="2026-01-16T20:24:51.471538" elapsed="0.000192"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:08:07.694420" elapsed="10.927302"/>
+<status status="PASS" start="2026-01-16T20:24:40.515149" elapsed="10.956812"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:18.623697" level="INFO">▶ Clic Reset App State</msg>
+<msg time="2026-01-16T20:24:51.473339" level="INFO">▶ Clic Reset App State</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:18.622885" elapsed="0.001373"/>
+<status status="PASS" start="2026-01-16T20:24:51.472880" elapsed="0.001213"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Reset App State" owner="Lib3">
-<msg time="2026-01-15T21:08:19.667556" level="INFO">✓ Cliqué sur 'Reset App State'</msg>
+<msg time="2026-01-16T20:24:52.521484" level="INFO">✓ Cliqué sur 'Reset App State'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'Reset App State' du menu</doc>
-<status status="PASS" start="2026-01-15T21:08:18.625280" elapsed="1.043006"/>
+<status status="PASS" start="2026-01-16T20:24:51.475185" elapsed="1.047016"/>
 </kw>
-<msg time="2026-01-15T21:08:19.668689" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:08:19.669235" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:24:52.522676" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:24:52.523195" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:08:18.624555" elapsed="1.045114"/>
+<status status="PASS" start="2026-01-16T20:24:51.474416" elapsed="1.049207"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:19.672089" level="INFO">✓ Clic Reset App State: RÉUSSI</msg>
+<msg time="2026-01-16T20:24:52.526298" level="INFO">✓ Clic Reset App State: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:19.671433" elapsed="0.001139"/>
+<status status="PASS" start="2026-01-16T20:24:52.525357" elapsed="0.005010"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1870,53 +1870,53 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:08:19.670074" elapsed="0.002704"/>
+<status status="PASS" start="2026-01-16T20:24:52.524006" elapsed="0.006578"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:08:19.672946" elapsed="0.000224"/>
+<status status="PASS" start="2026-01-16T20:24:52.530758" elapsed="0.000208"/>
 </return>
 <arg>Clic Reset App State</arg>
 <arg>Click Reset App State</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:08:18.622260" elapsed="1.051221"/>
+<status status="PASS" start="2026-01-16T20:24:51.472407" elapsed="1.058796"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:19.674884" level="INFO">▶ Vérification badge panier vide</msg>
+<msg time="2026-01-16T20:24:52.532676" level="INFO">▶ Vérification badge panier vide</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:19.674396" elapsed="0.001150"/>
+<status status="PASS" start="2026-01-16T20:24:52.532162" elapsed="0.001096"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Cart Is Empty" owner="Lib3">
-<msg time="2026-01-15T21:08:30.308155" level="INFO">Menu déjà ouvert, fermeture...
+<msg time="2026-01-16T20:25:03.233177" level="INFO">Menu déjà ouvert, fermeture...
 ✓ Menu burger fermé
 ✓ Le panier est vide (pas de badge)</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que le panier est vide (badge absent)</doc>
-<status status="PASS" start="2026-01-15T21:08:19.676666" elapsed="10.632143"/>
+<status status="PASS" start="2026-01-16T20:24:52.534725" elapsed="10.698906"/>
 </kw>
-<msg time="2026-01-15T21:08:30.309162" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:08:30.309437" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:25:03.233993" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:25:03.234451" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:08:19.675961" elapsed="10.633754"/>
+<status status="PASS" start="2026-01-16T20:24:52.533501" elapsed="10.701381"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:30.312117" level="INFO">✓ Vérification badge panier vide: RÉUSSI</msg>
+<msg time="2026-01-16T20:25:03.237491" level="INFO">✓ Vérification badge panier vide: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:30.311378" elapsed="0.001385"/>
+<status status="PASS" start="2026-01-16T20:25:03.236587" elapsed="0.001507"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1928,58 +1928,58 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:08:30.310138" elapsed="0.002800"/>
+<status status="PASS" start="2026-01-16T20:25:03.235235" elapsed="0.003098"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:08:30.313163" elapsed="0.000240"/>
+<status status="PASS" start="2026-01-16T20:25:03.238607" elapsed="0.000244"/>
 </return>
 <arg>Vérification badge panier vide</arg>
 <arg>Verify Cart Is Empty</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:08:19.673923" elapsed="10.639756"/>
+<status status="PASS" start="2026-01-16T20:24:52.531666" elapsed="10.707477"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:30.315062" level="INFO">▶ Vérification bouton Add to cart</msg>
+<msg time="2026-01-16T20:25:03.240654" level="INFO">▶ Vérification bouton Add to cart</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:30.314593" elapsed="0.000889"/>
+<status status="PASS" start="2026-01-16T20:25:03.240099" elapsed="0.000959"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Product Button State" owner="Lib3">
-<msg time="2026-01-15T21:08:50.434069" level="FAIL">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:25:23.727882" level="FAIL">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <arg>@{args}</arg>
 <doc>Vérifie l'état du bouton d'un produit (Add to cart ou Remove)
 Args:
     product_name: Nom du produit à vérifier
     expected_state: État attendu ('add' ou 'remove')</doc>
-<status status="FAIL" start="2026-01-15T21:08:30.316795" elapsed="20.128277">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:25:03.242392" elapsed="20.494555">Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
-<msg time="2026-01-15T21:08:50.445536" level="INFO">${status} = FAIL</msg>
-<msg time="2026-01-15T21:08:50.445770" level="INFO">${result} = Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:25:23.737367" level="INFO">${status} = FAIL</msg>
+<msg time="2026-01-16T20:25:23.737594" level="INFO">${result} = Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:08:30.315781" elapsed="20.130358"/>
+<status status="PASS" start="2026-01-16T20:25:03.241397" elapsed="20.496480"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
 <kw name="Fail" owner="BuiltIn">
-<msg time="2026-01-15T21:08:50.449369" level="FAIL">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
+<msg time="2026-01-16T20:25:23.742517" level="FAIL">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</msg>
 <arg>${step_name}: ${result}</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="FAIL" start="2026-01-15T21:08:50.448668" elapsed="0.006843">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:25:23.740504" elapsed="0.012377">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
-<status status="FAIL" start="2026-01-15T21:08:50.447934" elapsed="0.007935">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:25:23.739388" elapsed="0.013860">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -1991,12 +1991,12 @@ Args:
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="FAIL" start="2026-01-15T21:08:50.446672" elapsed="0.009405">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:25:23.738204" elapsed="0.015456">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:08:50.456297" elapsed="0.000329"/>
+<status status="PASS" start="2026-01-16T20:25:23.753935" elapsed="0.000257"/>
 </return>
 <arg>Vérification bouton Add to cart</arg>
 <arg>Verify Product Button State</arg>
@@ -2004,14 +2004,14 @@ Args:
 <arg>add</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="FAIL" start="2026-01-15T21:08:30.314109" elapsed="20.142957">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:25:03.239596" elapsed="20.514930">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:50.458286" level="INFO">=== ✓ TEST RESET APP STATE RÉUSSI ===</msg>
-<arg>=== ✓ TEST RESET APP STATE RÉUSSI ===</arg>
+<msg time="2026-01-16T20:25:23.755757" level="INFO">=== ✓ TEST RESET APP STATE TERMINE ===</msg>
+<arg>=== ✓ TEST RESET APP STATE TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:50.457630" elapsed="0.001115"/>
+<status status="PASS" start="2026-01-16T20:25:23.755080" elapsed="0.001528"/>
 </kw>
 <doc>Test de l'option "Reset App State" du menu burger
 pour problem_user</doc>
@@ -2019,27 +2019,27 @@ pour problem_user</doc>
 <tag>known_issue</tag>
 <tag>problem_user</tag>
 <tag>reset</tag>
-<status status="FAIL" start="2026-01-15T21:07:56.719328" elapsed="53.739933">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
+<status status="FAIL" start="2026-01-16T20:24:29.554815" elapsed="54.202363">Vérification bouton Add to cart: Le bouton 'Add to cart' est introuvable pour 'Sauce Labs Backpack'</status>
 </test>
-<test id="s1-s1-s1-t10" name="Test Logout Problem User" line="269">
+<test id="s1-s1-s1-t10" name="Test Logout Problem User" line="248">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:50.478350" level="INFO">=== TEST LOGOUT - PROBLEM USER ===</msg>
+<msg time="2026-01-16T20:25:23.786912" level="INFO">=== TEST LOGOUT - PROBLEM USER ===</msg>
 <arg>=== TEST LOGOUT - PROBLEM USER ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:50.477524" elapsed="0.001586"/>
+<status status="PASS" start="2026-01-16T20:25:23.785835" elapsed="0.001606"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:08:50.481742" level="INFO">▶ Ouverture du menu burger</msg>
+<msg time="2026-01-16T20:25:23.789890" level="INFO">▶ Ouverture du menu burger</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:08:50.480757" elapsed="0.001872"/>
+<status status="PASS" start="2026-01-16T20:25:23.788958" elapsed="0.001797"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Open Burger Menu" owner="Lib3">
-<msg time="2026-01-15T21:09:01.392863" level="INFO">Tentative d'ouverture du menu burger...
+<msg time="2026-01-16T20:25:34.753006" level="INFO">Tentative d'ouverture du menu burger...
 URL actuelle: https://www.saucedemo.com/inventory.html
 ✓ Bouton menu burger trouvé
 ✓ Bouton menu burger visible
@@ -2047,25 +2047,25 @@ Clic sur le bouton menu burger...
 ✓ Menu burger ouvert avec succès</msg>
 <arg>@{args}</arg>
 <doc>Ouvre le menu burger</doc>
-<status status="PASS" start="2026-01-15T21:08:50.483913" elapsed="10.909368"/>
+<status status="PASS" start="2026-01-16T20:25:23.791754" elapsed="10.961697"/>
 </kw>
-<msg time="2026-01-15T21:09:01.393625" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:09:01.393997" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:25:34.753808" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:25:34.754229" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:08:50.483050" elapsed="10.911277"/>
+<status status="PASS" start="2026-01-16T20:25:23.791083" elapsed="10.963469"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.397374" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
+<msg time="2026-01-16T20:25:34.757035" level="INFO">✓ Ouverture du menu burger: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.396193" elapsed="0.001984"/>
+<status status="PASS" start="2026-01-16T20:25:34.755918" elapsed="0.001576"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -2077,51 +2077,51 @@ Clic sur le bouton menu burger...
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.394732" elapsed="0.003696"/>
+<status status="PASS" start="2026-01-16T20:25:34.754860" elapsed="0.002860"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:09:01.398672" elapsed="0.000222"/>
+<status status="PASS" start="2026-01-16T20:25:34.757927" elapsed="0.000227"/>
 </return>
 <arg>Ouverture du menu burger</arg>
 <arg>Open Burger Menu</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:08:50.479885" elapsed="10.919253"/>
+<status status="PASS" start="2026-01-16T20:25:23.788147" elapsed="10.970268"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.400542" level="INFO">▶ Clic Logout</msg>
+<msg time="2026-01-16T20:25:34.759835" level="INFO">▶ Clic Logout</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.400055" elapsed="0.000912"/>
+<status status="PASS" start="2026-01-16T20:25:34.759348" elapsed="0.000861"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Logout" owner="Lib3">
-<msg time="2026-01-15T21:09:01.469135" level="INFO">✓ Cliqué sur 'Logout'</msg>
+<msg time="2026-01-16T20:25:34.825809" level="INFO">✓ Cliqué sur 'Logout'</msg>
 <arg>@{args}</arg>
 <doc>Clique sur l'option 'Logout' du menu</doc>
-<status status="PASS" start="2026-01-15T21:09:01.402089" elapsed="0.068119"/>
+<status status="PASS" start="2026-01-16T20:25:34.761386" elapsed="0.065545"/>
 </kw>
-<msg time="2026-01-15T21:09:01.471140" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:09:01.472075" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:25:34.827682" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:25:34.829597" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.401234" elapsed="0.071521"/>
+<status status="PASS" start="2026-01-16T20:25:34.760450" elapsed="0.069464"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.478315" level="INFO">✓ Clic Logout: RÉUSSI</msg>
+<msg time="2026-01-16T20:25:34.836774" level="INFO">✓ Clic Logout: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.476329" elapsed="0.005723"/>
+<status status="PASS" start="2026-01-16T20:25:34.833939" elapsed="0.003810"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -2133,51 +2133,51 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.473585" elapsed="0.009236"/>
+<status status="PASS" start="2026-01-16T20:25:34.830509" elapsed="0.007546"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:09:01.483572" elapsed="0.000649"/>
+<status status="PASS" start="2026-01-16T20:25:34.838359" elapsed="0.000601"/>
 </return>
 <arg>Clic Logout</arg>
 <arg>Click Logout</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:09:01.399580" elapsed="0.085550"/>
+<status status="PASS" start="2026-01-16T20:25:34.758864" elapsed="0.080832"/>
 </kw>
 <kw name="Execute Test Step">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.490789" level="INFO">▶ Vérification page login</msg>
+<msg time="2026-01-16T20:25:34.846276" level="INFO">▶ Vérification page login</msg>
 <arg>▶ ${step_name}</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.489108" elapsed="0.003144"/>
+<status status="PASS" start="2026-01-16T20:25:34.843724" elapsed="0.004733"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Verify Login Page Is Displayed" owner="Lib2">
-<msg time="2026-01-15T21:09:01.590829" level="INFO">✓ Page de login affichée correctement</msg>
+<msg time="2026-01-16T20:25:34.939153" level="INFO">✓ Page de login affichée correctement</msg>
 <arg>@{args}</arg>
 <doc>Vérifie que la page de login est affichée</doc>
-<status status="PASS" start="2026-01-15T21:09:01.495357" elapsed="0.095874"/>
+<status status="PASS" start="2026-01-16T20:25:34.851916" elapsed="0.087664"/>
 </kw>
-<msg time="2026-01-15T21:09:01.591581" level="INFO">${status} = PASS</msg>
-<msg time="2026-01-15T21:09:01.591981" level="INFO">${result} = None</msg>
+<msg time="2026-01-16T20:25:34.940011" level="INFO">${status} = PASS</msg>
+<msg time="2026-01-16T20:25:34.940449" level="INFO">${result} = None</msg>
 <var>${status}</var>
 <var>${result}</var>
 <arg>${keyword_name}</arg>
 <arg>@{args}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.492677" elapsed="0.099620"/>
+<status status="PASS" start="2026-01-16T20:25:34.849207" elapsed="0.091650"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.594544" level="INFO">✓ Vérification page login: RÉUSSI</msg>
+<msg time="2026-01-16T20:25:34.943179" level="INFO">✓ Vérification page login: RÉUSSI</msg>
 <arg>✓ ${step_name}: RÉUSSI</arg>
 <arg>console=yes</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.593580" elapsed="0.001635"/>
+<status status="PASS" start="2026-01-16T20:25:34.942375" elapsed="0.001360"/>
 </kw>
 <arg>'${status}' == 'PASS'</arg>
 <arg>Log</arg>
@@ -2189,25 +2189,25 @@ Permet de tracer clairement chaque action dans les logs</doc>
 <arg>Fail</arg>
 <arg>${step_name}: ${result}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.592605" elapsed="0.002848"/>
+<status status="PASS" start="2026-01-16T20:25:34.941272" elapsed="0.002853"/>
 </kw>
 <return>
 <value>${status}</value>
 <value>${result}</value>
-<status status="PASS" start="2026-01-15T21:09:01.595656" elapsed="0.000222"/>
+<status status="PASS" start="2026-01-16T20:25:34.944558" elapsed="0.000280"/>
 </return>
 <arg>Vérification page login</arg>
 <arg>Verify Login Page Is Displayed</arg>
 <doc>Exécute une étape de test avec logging amélioré
 Permet de tracer clairement chaque action dans les logs</doc>
-<status status="PASS" start="2026-01-15T21:09:01.486690" elapsed="0.109421"/>
+<status status="PASS" start="2026-01-16T20:25:34.841783" elapsed="0.103344"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.596984" level="INFO">=== ✓ TEST LOGOUT RÉUSSI ===</msg>
-<arg>=== ✓ TEST LOGOUT RÉUSSI ===</arg>
+<msg time="2026-01-16T20:25:34.945903" level="INFO">=== ✓ TEST LOGOUT TERMINE ===</msg>
+<arg>=== ✓ TEST LOGOUT TERMINE ===</arg>
 <arg>console=yes</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.596466" elapsed="0.001042"/>
+<status status="PASS" start="2026-01-16T20:25:34.945463" elapsed="0.000834"/>
 </kw>
 <doc>Test de l'option "Logout" du menu burger pour problem_user
 Vérifie la déconnexion et le retour à la page login</doc>
@@ -2215,63 +2215,24 @@ Vérifie la déconnexion et le retour à la page login</doc>
 <tag>known_issue</tag>
 <tag>logout</tag>
 <tag>problem_user</tag>
-<status status="PASS" start="2026-01-15T21:08:50.471097" elapsed="11.126797"/>
-</test>
-<test id="s1-s1-s1-t11" name="Test Locked Out User Cannot Login" line="292">
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:01.609923" level="INFO">=== TEST UTILISATEUR VERROUILLÉ ===</msg>
-<arg>=== TEST UTILISATEUR VERROUILLÉ ===</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:01.609136" elapsed="0.001290"/>
-</kw>
-<kw name="Open Browser To URL" owner="Lib1">
-<msg time="2026-01-15T21:09:01.768510" level="INFO">✓ Navigateur ouvert à : https://www.saucedemo.com</msg>
-<doc>Ouvre le navigateur à l'URL spécifiée ou à l'URL de base</doc>
-<status status="PASS" start="2026-01-15T21:09:01.610869" elapsed="0.158107"/>
-</kw>
-<kw name="Login With Locked Out User" owner="Lib2">
-<msg time="2026-01-15T21:09:02.204995" level="INFO">Tentative de connexion avec: locked_out_user
-✓ La connexion a échoué comme prévu</msg>
-<doc>Tente de se connecter avec un utilisateur verrouillé et s'attend à un échec</doc>
-<status status="PASS" start="2026-01-15T21:09:01.769711" elapsed="0.435965"/>
-</kw>
-<kw name="Verify Login Error Message" owner="Lib2">
-<msg time="2026-01-15T21:09:02.236660" level="INFO">✓ Message d'erreur correct: Epic sadface: Sorry, this user has been locked out.</msg>
-<arg>Epic sadface: Sorry, this user has been locked out.</arg>
-<doc>Vérifie le message d'erreur de connexion</doc>
-<status status="PASS" start="2026-01-15T21:09:02.206520" elapsed="0.030601"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-01-15T21:09:02.238990" level="INFO">=== ✓ TEST LOCKED USER RÉUSSI ===</msg>
-<arg>=== ✓ TEST LOCKED USER RÉUSSI ===</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-15T21:09:02.237918" elapsed="0.001753"/>
-</kw>
-<doc>Vérifie que l'utilisateur verrouillé ne peut pas se connecter
-Un message d'erreur approprié doit être affiché</doc>
-<tag>locked_user</tag>
-<tag>login</tag>
-<tag>negative_test</tag>
-<status status="PASS" start="2026-01-15T21:09:01.602824" elapsed="0.637585"/>
+<status status="PASS" start="2026-01-16T20:25:23.779551" elapsed="11.167248"/>
 </test>
 <kw name="Close Browser" owner="Lib1" type="TEARDOWN">
-<msg time="2026-01-15T21:09:04.669484" level="INFO">✓ Navigateur fermé</msg>
+<msg time="2026-01-16T20:25:37.349523" level="INFO">✓ Navigateur fermé</msg>
 <doc>Ferme le navigateur et nettoie les ressources</doc>
-<status status="PASS" start="2026-01-15T21:09:02.245581" elapsed="2.424597"/>
+<status status="PASS" start="2026-01-16T20:25:34.953118" elapsed="2.397012"/>
 </kw>
 <doc>Tests de navigation dans le menu burger de SauceDemo
 Tests séparés par fonctionnalité pour chaque type d'utilisateur</doc>
-<status status="FAIL" start="2026-01-15T21:06:01.331842" elapsed="183.338638"/>
+<status status="FAIL" start="2026-01-16T20:22:29.050817" elapsed="188.299551"/>
 </suite>
-<status status="FAIL" start="2026-01-15T21:06:01.325091" elapsed="183.352691"/>
+<status status="FAIL" start="2026-01-16T20:22:29.044527" elapsed="188.312951"/>
 </suite>
-<status status="FAIL" start="2026-01-15T21:06:01.264951" elapsed="183.417141"/>
+<status status="FAIL" start="2026-01-16T20:22:28.977756" elapsed="188.384424"/>
 </suite>
 <statistics>
 <total>
-<stat pass="8" fail="3" skip="0">All Tests</stat>
+<stat pass="7" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="1" skip="0">about</stat>
@@ -2279,19 +2240,16 @@ Tests séparés par fonctionnalité pour chaque type d'utilisateur</doc>
 <stat pass="7" fail="3" skip="0">burger_menu</stat>
 <stat pass="2" fail="1" skip="0">critical</stat>
 <stat pass="3" fail="2" skip="0">known_issue</stat>
-<stat pass="1" fail="0" skip="0">locked_user</stat>
-<stat pass="1" fail="0" skip="0">login</stat>
 <stat pass="2" fail="0" skip="0">logout</stat>
 <stat pass="2" fail="0" skip="0">menu_visibility</stat>
-<stat pass="1" fail="0" skip="0">negative_test</stat>
 <stat pass="3" fail="2" skip="0">problem_user</stat>
 <stat pass="0" fail="2" skip="0">reset</stat>
 <stat pass="4" fail="1" skip="0">standard_user</stat>
 </tag>
 <suite>
-<stat name="Saucedemo-Robotframework-Tests" id="s1" pass="8" fail="3" skip="0">Saucedemo-Robotframework-Tests</stat>
-<stat name="Tests" id="s1-s1" pass="8" fail="3" skip="0">Saucedemo-Robotframework-Tests.Tests</stat>
-<stat name="Burger Menu Navigation" id="s1-s1-s1" pass="8" fail="3" skip="0">Saucedemo-Robotframework-Tests.Tests.Burger Menu Navigation</stat>
+<stat name="Saucedemo-Robotframework-Tests" id="s1" pass="7" fail="3" skip="0">Saucedemo-Robotframework-Tests</stat>
+<stat name="Tests" id="s1-s1" pass="7" fail="3" skip="0">Saucedemo-Robotframework-Tests.Tests</stat>
+<stat name="Burger Menu Navigation" id="s1-s1-s1" pass="7" fail="3" skip="0">Saucedemo-Robotframework-Tests.Tests.Burger Menu Navigation</stat>
 </suite>
 </statistics>
 <errors>

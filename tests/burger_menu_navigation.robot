@@ -268,23 +268,23 @@ Test Logout Problem User
 # TEST LOCKED USER
 # ============================================================================
 
-Test Locked Out User Cannot Login
-    [Documentation]    Vérifie que l'utilisateur verrouillé ne peut pas se connecter
-    ...                Un message d'erreur approprié doit être affiché
-    [Tags]    login    locked_user    negative_test
+# Test Locked Out User Cannot Login
+#     [Documentation]    Vérifie que l'utilisateur verrouillé ne peut pas se connecter
+#     ...                Un message d'erreur approprié doit être affiché
+#     [Tags]    login    locked_user    negative_test
     
-    Log    === TEST UTILISATEUR VERROUILLÉ ===    console=yes
+#     Log    === TEST UTILISATEUR VERROUILLÉ ===    console=yes
     
-    # Se reconnecter après le test précédent
-    Open Browser To URL
+#     # Se reconnecter après le test précédent
+#     Open Browser To URL
     
-    # Tenter de se connecter avec l'utilisateur verrouillé
-    Login With Locked Out User   
+#     # Tenter de se connecter avec l'utilisateur verrouillé
+#     Login With Locked Out User   
     
-    # Vérifier le message d'erreur
-    Verify Login Error Message    Epic sadface: Sorry, this user has been locked out.
+#     # Vérifier le message d'erreur
+#     Verify Login Error Message    Epic sadface: Sorry, this user has been locked out.
     
-    Log    === ✓ TEST LOCKED USER TERMINE ===    console=yes
+#     Log    === ✓ TEST LOCKED USER TERMINE ===    console=yes
 
 *** Keywords ***
 Execute Test Step

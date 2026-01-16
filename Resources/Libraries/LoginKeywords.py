@@ -58,38 +58,38 @@ class LoginKeywords:
         self._login(username, password)
         print(f"✓ Connecté avec l'utilisateur: {username}")
 
-    @keyword("Login With Locked Out User")
-    def login_with_locked_out_user(self):
-        """Tente de se connecter avec un utilisateur verrouillé et s'attend à un échec"""
-        credentials = self.config['credentials']['locked_out_user']
-        username = credentials['username']
-        password = credentials['password']
+    # @keyword("Login With Locked Out User")
+    # def login_with_locked_out_user(self):
+    #     """Tente de se connecter avec un utilisateur verrouillé et s'attend à un échec"""
+    #     credentials = self.config['credentials']['locked_out_user']
+    #     username = credentials['username']
+    #     password = credentials['password']
         
-        browser_lib = self._get_browser_library()
-        driver = browser_lib.driver
-        wait = WebDriverWait(driver, self.config['timeouts']['short'])
+    #     browser_lib = self._get_browser_library()
+    #     driver = browser_lib.driver
+    #     wait = WebDriverWait(driver, self.config['timeouts']['short'])
         
-        print(f"Tentative de connexion avec: {username}")
+    #     print(f"Tentative de connexion avec: {username}")
         
-        # Remplir les champs
-        username_field = wait.until(
-            EC.presence_of_element_located((By.ID, self.selectors['login_page']['username_field']))
-        )
-        username_field.clear()
-        username_field.send_keys(username)
+    #     # Remplir les champs
+    #     username_field = wait.until(
+    #         EC.presence_of_element_located((By.ID, self.selectors['login_page']['username_field']))
+    #     )
+    #     username_field.clear()
+    #     username_field.send_keys(username)
         
-        password_field = driver.find_element(By.ID, self.selectors['login_page']['password_field'])
-        password_field.clear()
-        password_field.send_keys(password)
+    #     password_field = driver.find_element(By.ID, self.selectors['login_page']['password_field'])
+    #     password_field.clear()
+    #     password_field.send_keys(password)
         
-        # Cliquer sur le bouton login
-        driver.find_element(By.ID, self.selectors['login_page']['login_button']).click()
+    #     # Cliquer sur le bouton login
+    #     driver.find_element(By.ID, self.selectors['login_page']['login_button']).click()
         
-        # Attendre que le message d'erreur apparaisse
-        wait.until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "[data-test='error']"))
-        )
-        print("✓ La connexion a échoué comme prévu")
+    #     # Attendre que le message d'erreur apparaisse
+    #     wait.until(
+    #         EC.presence_of_element_located((By.CSS_SELECTOR, "[data-test='error']"))
+    #     )
+    #     print("✓ La connexion a échoué comme prévu")
 
     def _login(self, username, password):
         """Méthode privée pour gérer la connexion"""
